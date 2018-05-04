@@ -53,7 +53,7 @@ class listener implements EventSubscriberInterface
 			'core.user_setup'		=> 'core_user_setup',
 			'core.append_sid'		=> 'core_append_sid',
 			'core.twig_environment_render_template_before'
-				=> ['core_twig_environment_render_template_before', -1],
+				=> 'core_twig_environment_render_template_before',
 		];
 	}
 
@@ -110,7 +110,7 @@ class listener implements EventSubscriberInterface
 	{
 		$context = $event['context'];
 
-		$page_name = $this->user->page['page_name'];
+		$page_name = '/' . $this->user->page['page_name'];
 		$query_string = $this->user->page['query_string'];
 		$query_string = str_replace(['&showphpbbevents=1', '&showphpbbevents=0'], '', $query_string);
 		$query_string = str_replace(['showphpbbevents=1', 'showphpbbevents=0'], '', $query_string);
