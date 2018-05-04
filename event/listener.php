@@ -53,7 +53,7 @@ class listener implements EventSubscriberInterface
 			'core.user_setup'		=> 'core_user_setup',
 			'core.append_sid'		=> 'core_append_sid',
 			'core.twig_environment_render_template_before'
-				=> 'core_twig_environment_render_template_before',
+				=> ['core_twig_environment_render_template_before', -1],
 		];
 	}
 
@@ -110,7 +110,7 @@ class listener implements EventSubscriberInterface
 	{
 		$context = $event['context'];
 
-		$page_name = '/' . $this->user->page['page_name'];
+		$page = $this->user->page['script_path'] . $this->user->page['page_name'];
 		$query_string = $this->user->page['query_string'];
 		$query_string = str_replace(['&showphpbbevents=1', '&showphpbbevents=0'], '', $query_string);
 		$query_string = str_replace(['showphpbbevents=1', 'showphpbbevents=0'], '', $query_string);
@@ -129,8 +129,8 @@ class listener implements EventSubscriberInterface
 
 		$template = [
 			'enable'	=> $this->request->variable('showphpbbevents', 0) ? true : false,
-			'u_hide'	=> append_sid($page_name, $query_string . 'showphpbbevents=0'),
-			'u_show'	=> append_sid($page_name, $query_string . 'showphpbbevents=1'),
+			'u_hide'	=> append_sid($page, $query_string . 'showphpbbevents=0'),
+			'u_show'	=> append_sid($page, $query_string . 'showphpbbevents=1'),
 			'php'		=> $php_events,
 		];
 
