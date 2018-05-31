@@ -10,7 +10,7 @@ This phpBB extension for developers shows all core phpBB template and PHP events
 
 ## Requirements
 
-* phpBB 3.2.x
+* phpBB 3.2.1+
 * PHP 7+
 
 ## Quick Install
