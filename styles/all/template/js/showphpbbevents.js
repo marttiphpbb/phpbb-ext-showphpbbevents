@@ -10,6 +10,5 @@
 					.text($(this).data('marttiphpbb-showphpbbevents-name'))
 					.insertAfter($(this).parent());
 			});
-		$option.parent().append();
 	});
 })(jQuery, window, document);
