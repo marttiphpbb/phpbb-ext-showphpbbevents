@@ -13,7 +13,7 @@ use Symfony\Component\EventDispatcher\Event;
 
 class php_event_listener implements EventSubscriberInterface
 {
-	private $count_ary = [];
+	protected $count_ary = [];
 
 	static public function getSubscribedEvents()
 	{

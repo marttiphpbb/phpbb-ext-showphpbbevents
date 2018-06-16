@@ -26,8 +26,7 @@ class verify extends command
 {
 	const PATH = __DIR__ . '/../';
 
-	/** @var events_cache */
-	private $events_cache;
+	protected $events_cache;
 
 	public function __construct(user $user, events_cache $events_cache)
 	{
@@ -35,9 +34,6 @@ class verify extends command
 		parent::__construct($user);
 	}
 
-	/**
-	* {@inheritdoc}
-	*/
 	protected function configure()
 	{
 		$this
@@ -49,11 +45,6 @@ class verify extends command
 		;
 	}
 
-	/**
-	* @param InputInterface
-	* @param OutputInterface
-	* @return void
-	*/
 	protected function execute(InputInterface $input, OutputInterface $output)
 	{
 		$io = new SymfonyStyle($input, $output);

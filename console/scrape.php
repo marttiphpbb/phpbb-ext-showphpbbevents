@@ -20,8 +20,7 @@ class scrape extends command
 {
 	const URL = 'https://wiki.phpbb.com/Event_List';
 
-	/** @var events_cache */
-	private $events_cache;
+	protected $events_cache;
 
 	public function __construct(user $user, events_cache $events_cache)
 	{
@@ -29,9 +28,6 @@ class scrape extends command
 		parent::__construct($user);
 	}
 
-	/**
-	* {@inheritdoc}
-	*/
 	protected function configure()
 	{
 		$this
@@ -41,11 +37,6 @@ class scrape extends command
 		;
 	}
 
-	/**
-	* @param InputInterface
-	* @param OutputInterface
-	* @return void
-	*/
 	protected function execute(InputInterface $input, OutputInterface $output)
 	{
 		$io = new SymfonyStyle($input, $output);

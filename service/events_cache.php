@@ -14,14 +14,9 @@ class events_cache
 {
 	const LOCATION = '_marttiphpbb_showphpbbevents_events';
 
-	/** @var cache */
-    private $cache;
-
-	/** @var events_store */
-	private $events_store;
-
-    /** @var array */
-    private $events = [];
+    protected $cache;
+	protected $events_store;
+    protected $events = [];
 
 	public function __construct(cache $cache, events_store $events_store)
 	{

@@ -27,8 +27,7 @@ class event_type
 		'php'			=> 'PHP events',
 	];
 
-	/** @var string */
-	private $type;
+	protected $type;
 
 	public function __construct(string $type)
 	{

@@ -14,22 +14,12 @@ use phpbb\user;
 use marttiphpbb\showphpbbevents\service\events_cache;
 use marttiphpbb\showphpbbevents\event\php_event_listener;
 
-/**
-* Event listener
-*/
 class listener implements EventSubscriberInterface
 {
-	/** @var request */
-	private $request;
-
-	/** @var user */
-	private $user;
-
-	/** @var events_cache */
-	private $events_cache;
-
-	/** @var php_event_listener */
-	private $php_event_listener;
+	protected $request;
+	protected $user;
+	protected $events_cache;
+	protected $php_event_listener;
 
 	/**
 	 * @param request $request

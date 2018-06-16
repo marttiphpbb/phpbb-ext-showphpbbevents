@@ -27,7 +27,7 @@ use Symfony\Component\EventDispatcher\Event;
 
 class php_event_listener implements EventSubscriberInterface
 {
-	private $count_ary = [];
+	protected $count_ary = [];
 
 	static public function getSubscribedEvents()
 	{
@@ -56,27 +56,16 @@ class php_event_listener implements EventSubscriberInterface
 }
 EOT;
 
-	/**
-	* @param array
-	* @return void
-	*/
 	public static function write_file(array $php_events)
 	{
 		file_put_contents(self::FILE, self::get($php_events));
 	}
 
-	/**
-	 * @return $string
-	 */
 	public static function read_file():string
 	{
 		return file_get_contents(self::FILE);
 	}
 
-	/**
-	* @param array
-	* @return string
-	*/
 	public static function get(array $php_events):string
 	{
 		$str = '';

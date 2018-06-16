@@ -11,8 +11,7 @@ class events_store
 {
 	const FILE = __DIR__ . '/../events_data.json';
 
-    /** @var array */
-    private $events = [];
+    protected $events = [];
 
 	public function __construct()
 	{

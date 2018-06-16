@@ -20,11 +20,8 @@ use marttiphpbb\showphpbbevents\service\events_store;
 
 class write extends command
 {
-	/** @var events_cache */
-	private $events_cache;
-
-	/** @var events_store */
-	private $events_store;
+	protected $events_cache;
+	protected $events_store;
 
 	public function __construct(user $user, events_cache $events_cache, events_store $events_store)
 	{
@@ -33,9 +30,6 @@ class write extends command
 		parent::__construct($user);
 	}
 
-	/**
-	* {@inheritdoc}
-	*/
 	protected function configure()
 	{
 		$this
@@ -45,11 +39,6 @@ class write extends command
 		;
 	}
 
-	/**
-	* @param InputInterface
-	* @param OutputInterface
-	* @return void
-	*/
 	protected function execute(InputInterface $input, OutputInterface $output)
 	{
 		$io = new SymfonyStyle($input, $output);

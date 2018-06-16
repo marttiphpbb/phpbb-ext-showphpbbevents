@@ -25,8 +25,7 @@ class generate extends command
 {
 	const PATH = __DIR__ . '/../';
 
-	/** @var events_store */
-	private $events_store;
+	protected $events_store;
 
 	public function __construct(user $user, events_store $events_store)
 	{
@@ -34,9 +33,6 @@ class generate extends command
 		parent::__construct($user);
 	}
 
-	/**
-	* {@inheritdoc}
-	*/
 	protected function configure()
 	{
 		$this
@@ -48,11 +44,6 @@ class generate extends command
 		;
 	}
 
-	/**
-	* @param InputInterface
-	* @param OutputInterface
-	* @return void
-	*/
 	protected function execute(InputInterface $input, OutputInterface $output)
 	{
 		$io = new SymfonyStyle($input, $output);
