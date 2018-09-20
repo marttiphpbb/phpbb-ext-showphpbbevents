@@ -3127,6 +3127,110 @@
             "vars": "row, rowset_data",
             "since": "3.1.0-a1",
             "explain": "Modify the post rowset containing data to be displayed with posts"
+        },
+        "core.oauth_login_after_check_if_provider_id_has_match": {
+            "loc": {
+                "phpbb\/auth\/provider\/oauth\/oauth.php": 244
+            },
+            "vars": "data, row, service",
+            "since": "3.2.3-RC1",
+            "explain": "Event is triggered before check if provider is already associated with an account"
+        },
+        "core.search_mysql_create_index_before": {
+            "loc": {
+                "phpbb\/search\/fulltext_mysql.php": 1054
+            },
+            "vars": "sql_queries, stats",
+            "since": "3.2.3-RC1",
+            "explain": "Event to modify SQL queries before the MySQL search index is created"
+        },
+        "core.search_mysql_delete_index_before": {
+            "loc": {
+                "phpbb\/search\/fulltext_mysql.php": 1122
+            },
+            "vars": "sql_queries, stats",
+            "since": "3.2.3-RC1",
+            "explain": "Event to modify SQL queries before the MySQL search index is deleted"
+        },
+        "core.search_mysql_index_before": {
+            "loc": {
+                "phpbb\/search\/fulltext_mysql.php": 947
+            },
+            "vars": "forum_id, message, mode, post_id, poster_id, split_text, split_title, subject, words",
+            "since": "3.2.3-RC1",
+            "explain": "Event to modify method arguments and words before the MySQL search index is updated"
+        },
+        "core.search_native_delete_index_before": {
+            "loc": {
+                "phpbb\/search\/fulltext_native.php": 1730
+            },
+            "vars": "sql_queries, stats",
+            "since": "3.2.3-RC1",
+            "explain": "Event to modify SQL queries before the native search index is deleted"
+        },
+        "core.search_native_index_before": {
+            "loc": {
+                "phpbb\/search\/fulltext_native.php": 1466
+            },
+            "vars": "cur_words, forum_id, message, mode, post_id, poster_id, split_text, split_title, subject, words",
+            "since": "3.2.3-RC1",
+            "explain": "Event to modify method arguments and words before the native search index is updated"
+        },
+        "core.search_postgres_create_index_before": {
+            "loc": {
+                "phpbb\/search\/fulltext_postgres.php": 992
+            },
+            "vars": "sql_queries, stats",
+            "since": "3.2.3-RC1",
+            "explain": "Event to modify SQL queries before the Postgres search index is created"
+        },
+        "core.search_postgres_delete_index_before": {
+            "loc": {
+                "phpbb\/search\/fulltext_postgres.php": 1048
+            },
+            "vars": "sql_queries, stats",
+            "since": "3.2.3-RC1",
+            "explain": "Event to modify SQL queries before the Postgres search index is created"
+        },
+        "core.search_postgres_index_before": {
+            "loc": {
+                "phpbb\/search\/fulltext_postgres.php": 918
+            },
+            "vars": "forum_id, message, mode, post_id, poster_id, split_text, split_title, subject, words",
+            "since": "3.2.3-RC1",
+            "explain": "Event to modify method arguments and words before the PostgreSQL search index is updated"
+        },
+        "core.search_sphinx_index_before": {
+            "loc": {
+                "phpbb\/search\/fulltext_sphinx.php": 781
+            },
+            "vars": "forum_id, message, mode, post_id, poster_id, subject",
+            "since": "3.2.3-RC1",
+            "explain": "Event to modify method arguments before the Sphinx search index is updated"
+        },
+        "core.login_box_modify_template_data": {
+            "loc": {
+                "includes\/functions.php": 2504
+            },
+            "vars": "admin, autologin, login_box_template_data, redirect, username",
+            "since": "3.2.3-RC2",
+            "explain": "Event to add\/modify login box template data"
+        },
+        "core.mcp_queue_get_posts_for_posts_query_before": {
+            "loc": {
+                "includes\/mcp\/mcp_queue.php": 525
+            },
+            "vars": "forum_list, limit_time_sql, sort_order_sql, sql, topic_id, visibility_const",
+            "since": "3.2.3-RC2",
+            "explain": "Alter sql query to get information on all posts in queue"
+        },
+        "core.mcp_queue_get_posts_modify_post_row": {
+            "loc": {
+                "includes\/mcp\/mcp_queue.php": 648
+            },
+            "vars": "forum_names, post_row, row",
+            "since": "3.2.3-RC2",
+            "explain": "Alter sql query to get information on all topics in the list of forums provided."
         }
     },
     "template": {
