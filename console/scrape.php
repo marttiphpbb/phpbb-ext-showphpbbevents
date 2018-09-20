@@ -9,6 +9,7 @@ namespace marttiphpbb\showphpbbevents\console;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\Console\Formatter\OutputFormatterStyle;
 use phpbb\console\command\command;
@@ -19,6 +20,7 @@ use Goutte\Client;
 class scrape extends command
 {
 	const URL = 'https://wiki.phpbb.com/Event_List';
+	const URL_HI = 'https://wiki.phpbb.com/Release_Highlights/';
 
 	protected $events_cache;
 
@@ -34,11 +36,15 @@ class scrape extends command
 			->setName('ext-showphpbbevents:scrape')
 			->setDescription('For Development: Scrape events data from ' . self::URL . ' and load into cache.')
 			->setHelp('This command was created for the development of the marttiphpbb-showphpbbevents extension.')
+			->addArgument('version', InputArgument::OPTIONAL, 'Only scrape events from newest version in "Release Highlights" (' . self::URL_HI . ').')
 		;
 	}
 
 	protected function execute(InputInterface $input, OutputInterface $output)
 	{
+		$version = $input->getArgument('version');
+		$events = [];
+
 		$io = new SymfonyStyle($input, $output);
 
 		$outputStyle = new OutputFormatterStyle('white', 'black', ['bold']);
@@ -46,15 +52,31 @@ class scrape extends command
 
 		$client = new Client();
 
-		$crawler = $client->request('GET', self::URL);
+		if ($version)
+		{
+			$crawler = $client->request('GET', self::URL_HI . $version);
+			$events = $this->events_cache->get_all();
+
+			$io->writeln([
+				'',
+				'<info>Found in cache.</>',
+				'<info>=================</>',
+				'<comment>php events: </><v>' . count($events['php']) . '</>',
+				'<comment>template events: </><v>' . count($events['template']) . '</>',
+				'<comment>acp template events: </><v>' . count($events['template_acp']) . '</>',
+				'',
+			]);
+		}
+		else
+		{
+			$crawler = $client->request('GET', self::URL);
+		}
 
 		$table = $crawler->filter('table')->filter('tr')->each(function ($tr, $i) {
 			return $tr->filter('td')->each(function ($td, $i) {
 				return trim($td->text());
 			});
 		});
-
-		$events = [];
 
 		foreach ($table as $t)
 		{
@@ -105,7 +127,7 @@ class scrape extends command
 
 		$io->writeln([
 			'',
-			'<info>written to cache.</>',
+			'<info>Written to cache.</>',
 			'<info>=================</>',
 			'<comment>php events: </><v>' . count($events['php']) . '</>',
 			'<comment>template events: </><v>' . count($events['template']) . '</>',
