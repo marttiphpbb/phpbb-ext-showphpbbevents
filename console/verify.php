@@ -19,6 +19,7 @@ use marttiphpbb\showphpbbevents\service\events_cache;
 use marttiphpbb\showphpbbevents\util\event_type;
 use marttiphpbb\showphpbbevents\util\generate_php_listener;
 use marttiphpbb\showphpbbevents\util\generate_template_listener;
+use marttiphpbb\showphpbbevents\event\php_event_listener;
 use Symfony\Component\Finder\Finder;
 use marttiphpbb\showphpbbevents\model\template;
 
@@ -84,6 +85,14 @@ class verify extends command
 
 			if ($type === 'php')
 			{
+				$php_event_count = count(php_event_listener::getSubscribedEvents());
+
+				$io->writeln([
+					'',
+					'<info>PHP events currently in extension: </><v>' . $php_event_count . '</>',
+					'',
+				]);
+
 				$new = generate_php_listener::get($events['php']);
 				$stored = generate_php_listener::read_file();
 
