@@ -18,12 +18,12 @@ class generate_template_listener
 	const ENABLE = "{%- if marttiphpbb_showphpbbevents.enable -%}\n%content%{%- endif -%}\n";
 	const DISABLE = "{%- if not marttiphpbb_showphpbbevents.enable -%}\n%content%{%- endif -%}\n";
 	const BUTTON_HIDE = <<<'EOT'
-<a class="showphpbbevents-hide" href="{{- marttiphpbb_showphpbbevents.u_hide -}}" title="{{- lang('MARTTIPHPBB_SHOWPHPBBEVENTS_HIDE_EXPLAIN') -}}">
+<a class="showphpbbevents-hide" href="{{- marttiphpbb_showphpbbevents.u_hide -}}" title="{{- lang('MARTTIPHPBB_SHOWPHPBBEVENTS_HIDE_EXPLAIN') -}}" rel="nofollow">
 	{{- lang('MARTTIPHPBB_SHOWPHPBBEVENTS_HIDE') -}}
 </a>
 EOT;
 	const BUTTON_SHOW = <<<'EOT'
-<a class="showphpbbevents-show" href="{{- marttiphpbb_showphpbbevents.u_show -}}" title="{{- lang('MARTTIPHPBB_SHOWPHPBBEVENTS_SHOW_EXPLAIN') -}}">
+<a class="showphpbbevents-show" href="{{- marttiphpbb_showphpbbevents.u_show -}}" title="{{- lang('MARTTIPHPBB_SHOWPHPBBEVENTS_SHOW_EXPLAIN') -}}" rel="nofollow">
 	{{- lang('MARTTIPHPBB_SHOWPHPBBEVENTS_SHOW') -}}
 </a>
 EOT;
