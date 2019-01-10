@@ -11,7 +11,7 @@ use marttiphpbb\showphpbbevents\util\event_type;
 
 class generate_template_listener
 {
-	const LINK_BASE = 'https://github.com/phpbb/phpbb/tree/prep-release-3.2.4/phpBB/';
+	const LINK_BASE = 'https://github.com/phpbb/phpbb/tree/prep-release-3.2.5/phpBB/';
 	const LINK_LINE = '#L';
 	const INCLUDECSS = "{%- INCLUDECSS '@marttiphpbb_showphpbbevents/showphpbbevents.css' -%}\n";
 	const INCLUDEJS = "{%- INCLUDEJS '@marttiphpbb_showphpbbevents/js/showphpbbevents.js' -%}\n";
