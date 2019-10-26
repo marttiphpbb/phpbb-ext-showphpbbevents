@@ -10,7 +10,7 @@
         },
         "core.acp_attachments_config_edit_add": {
             "loc": {
-                "includes\/acp\/acp_attachments.php": 182
+                "includes\/acp\/acp_attachments.php": 186
             },
             "vars": "display_vars, mode, submit",
             "since": "3.1.11-RC1",
@@ -58,7 +58,7 @@
         },
         "core.acp_bbcodes_edit_add": {
             "loc": {
-                "includes\/acp\/acp_bbcodes.php": 132
+                "includes\/acp\/acp_bbcodes.php": 126
             },
             "vars": "action, bbcode_id, bbcode_tokens, tpl_ary",
             "since": "3.1.0-a3",
@@ -66,7 +66,7 @@
         },
         "core.acp_bbcodes_modify_create": {
             "loc": {
-                "includes\/acp\/acp_bbcodes.php": 179
+                "includes\/acp\/acp_bbcodes.php": 173
             },
             "vars": "action, bbcode_helpline, bbcode_id, bbcode_match, bbcode_tpl, display_on_posting, hidden_fields, sql_ary",
             "since": "3.1.0-a3",
@@ -82,7 +82,7 @@
         },
         "core.acp_board_config_edit_add": {
             "loc": {
-                "includes\/acp\/acp_board.php": 492
+                "includes\/acp\/acp_board.php": 493
             },
             "vars": "display_vars, mode, submit",
             "since": "3.1.0-a4",
@@ -186,7 +186,7 @@
         },
         "core.acp_manage_forums_move_children": {
             "loc": {
-                "includes\/acp\/acp_forums.php": 1426
+                "includes\/acp\/acp_forums.php": 1433
             },
             "vars": "errors, from_id, to_id",
             "since": "3.1.0-a1",
@@ -194,7 +194,7 @@
         },
         "core.acp_manage_forums_move_content": {
             "loc": {
-                "includes\/acp\/acp_forums.php": 1534
+                "includes\/acp\/acp_forums.php": 1541
             },
             "vars": "errors, from_id, sync, to_id",
             "since": "3.1.0-a1",
@@ -202,7 +202,7 @@
         },
         "core.acp_manage_forums_move_content_sql_before": {
             "loc": {
-                "includes\/acp\/acp_forums.php": 1552
+                "includes\/acp\/acp_forums.php": 1559
             },
             "vars": "table_ary",
             "since": "3.2.4-RC1",
@@ -218,7 +218,7 @@
         },
         "core.acp_manage_forums_update_data_after": {
             "loc": {
-                "includes\/acp\/acp_forums.php": 1386
+                "includes\/acp\/acp_forums.php": 1393
             },
             "vars": "errors, forum_data, forum_data_sql, is_new_forum",
             "since": "3.1.0-a1",
@@ -226,7 +226,7 @@
         },
         "core.acp_manage_forums_update_data_before": {
             "loc": {
-                "includes\/acp\/acp_forums.php": 1092
+                "includes\/acp\/acp_forums.php": 1099
             },
             "vars": "forum_data, forum_data_sql",
             "since": "3.1.0-a1",
@@ -450,7 +450,7 @@
         },
         "core.add_form_key": {
             "loc": {
-                "includes\/functions.php": 2094
+                "includes\/functions.php": 2073
             },
             "vars": "form_name, now, s_fields, template_variable_suffix, token, token_sid",
             "since": "3.1.0-RC3",
@@ -466,7 +466,7 @@
         },
         "core.adm_page_footer": {
             "loc": {
-                "includes\/functions_acp.php": 165
+                "includes\/functions_acp.php": 166
             },
             "vars": "adm_page_footer_override, copyright_html",
             "since": "3.1.0-a1",
@@ -482,7 +482,7 @@
         },
         "core.adm_page_header_after": {
             "loc": {
-                "includes\/functions_acp.php": 133
+                "includes\/functions_acp.php": 134
             },
             "vars": "http_headers, page_title",
             "since": "3.1.0-RC3",
@@ -522,7 +522,7 @@
         },
         "core.auth_oauth_link_after": {
             "loc": {
-                "phpbb\/auth\/provider\/oauth\/oauth.php": 651
+                "phpbb\/auth\/provider\/oauth\/oauth.php": 666
             },
             "vars": "data",
             "since": "3.1.11-RC1",
@@ -578,7 +578,7 @@
         },
         "core.build_config_template": {
             "loc": {
-                "includes\/functions_acp.php": 409
+                "includes\/functions_acp.php": 410
             },
             "vars": "key, name, new, tpl, tpl_type, vars",
             "since": "3.1.0-a1",
@@ -642,7 +642,7 @@
         },
         "core.delete_forum_content_before_query": {
             "loc": {
-                "includes\/acp\/acp_forums.php": 1979
+                "includes\/acp\/acp_forums.php": 1986
             },
             "vars": "forum_id, post_counts, table_ary, topic_ids",
             "since": "3.1.6-RC1",
@@ -650,7 +650,7 @@
         },
         "core.delete_group_after": {
             "loc": {
-                "includes\/functions_user.php": 2689
+                "includes\/functions_user.php": 2693
             },
             "vars": "group_id, group_name",
             "since": "3.1.0-a1",
@@ -674,7 +674,7 @@
         },
         "core.delete_post_after": {
             "loc": {
-                "includes\/functions_posting.php": 1468
+                "includes\/functions_posting.php": 1493
             },
             "vars": "data, forum_id, is_soft, next_post_id, post_id, post_mode, softdelete_reason, topic_id",
             "since": "3.1.11-RC1",
@@ -890,7 +890,7 @@
         },
         "core.garbage_collection": {
             "loc": {
-                "includes\/functions.php": 4836
+                "includes\/functions.php": 4834
             },
             "vars": "",
             "since": "3.1.0-a1",
@@ -954,7 +954,7 @@
         },
         "core.get_avatar_after": {
             "loc": {
-                "includes\/functions.php": 4223
+                "includes\/functions.php": 4216
             },
             "vars": "alt, avatar_data, html, ignore_config, row",
             "since": "3.1.6-RC1",
@@ -1042,7 +1042,7 @@
         },
         "core.group_add_user_after": {
             "loc": {
-                "includes\/functions_user.php": 2814
+                "includes\/functions_user.php": 2818
             },
             "vars": "group_id, group_name, pending, user_id_ary, username_ary",
             "since": "3.1.7-RC1",
@@ -1050,7 +1050,7 @@
         },
         "core.group_delete_user_after": {
             "loc": {
-                "includes\/functions_user.php": 2986
+                "includes\/functions_user.php": 2990
             },
             "vars": "group_id, group_name, user_id_ary, username_ary",
             "since": "3.1.7-RC1",
@@ -1058,7 +1058,7 @@
         },
         "core.group_delete_user_before": {
             "loc": {
-                "includes\/functions_user.php": 2965
+                "includes\/functions_user.php": 2969
             },
             "vars": "group_id, group_name, user_id_ary, username_ary",
             "since": "3.1.0-a1",
@@ -1066,7 +1066,7 @@
         },
         "core.handle_post_delete_conditions": {
             "loc": {
-                "includes\/functions_posting.php": 2660
+                "includes\/functions_posting.php": 2690
             },
             "vars": "delete_reason, force_delete_allowed, force_softdelete_allowed, forum_id, is_soft, perm_check, post_data, post_id, topic_id",
             "since": "3.1.11-RC1",
@@ -1130,7 +1130,7 @@
         },
         "core.index_modify_page_title": {
             "loc": {
-                "index.php": 251
+                "index.php": 248
             },
             "vars": "page_title",
             "since": "3.1.0-a1",
@@ -1146,7 +1146,7 @@
         },
         "core.login_box_before": {
             "loc": {
-                "includes\/functions.php": 2312
+                "includes\/functions.php": 2311
             },
             "vars": "admin, err, l_explain, l_success, redirect, s_display",
             "since": "3.1.9-RC1",
@@ -1154,7 +1154,7 @@
         },
         "core.login_box_failed": {
             "loc": {
-                "includes\/functions.php": 2485
+                "includes\/functions.php": 2484
             },
             "vars": "err, password, result, username",
             "since": "3.1.3-RC1",
@@ -1162,7 +1162,7 @@
         },
         "core.login_box_modify_template_data": {
             "loc": {
-                "includes\/functions.php": 2573
+                "includes\/functions.php": 2569
             },
             "vars": "admin, autologin, login_box_template_data, redirect, username",
             "since": "3.2.3-RC2",
@@ -1170,7 +1170,7 @@
         },
         "core.login_box_redirect": {
             "loc": {
-                "includes\/functions.php": 2417
+                "includes\/functions.php": 2416
             },
             "vars": "admin, redirect, result",
             "since": "3.1.0-RC5",
@@ -1178,7 +1178,7 @@
         },
         "core.login_forum_box": {
             "loc": {
-                "includes\/functions.php": 2663
+                "includes\/functions.php": 2659
             },
             "vars": "forum_data, password",
             "since": "3.1.0-RC3",
@@ -1266,7 +1266,7 @@
         },
         "core.mcp_change_topic_type_after": {
             "loc": {
-                "includes\/mcp\/mcp_main.php": 493
+                "includes\/mcp\/mcp_main.php": 509
             },
             "vars": "forum_id, new_topic_type, topic_ids",
             "since": "3.2.6-RC1",
@@ -1274,7 +1274,7 @@
         },
         "core.mcp_change_topic_type_before": {
             "loc": {
-                "includes\/mcp\/mcp_main.php": 444
+                "includes\/mcp\/mcp_main.php": 460
             },
             "vars": "forum_id, new_topic_type, topic_ids",
             "since": "3.2.6-RC1",
@@ -1338,7 +1338,7 @@
         },
         "core.mcp_lock_unlock_after": {
             "loc": {
-                "includes\/mcp\/mcp_main.php": 355
+                "includes\/mcp\/mcp_main.php": 371
             },
             "vars": "action, data, ids",
             "since": "3.1.7-RC1",
@@ -1346,7 +1346,7 @@
         },
         "core.mcp_main_fork_sql_after": {
             "loc": {
-                "includes\/mcp\/mcp_main.php": 1523
+                "includes\/mcp\/mcp_main.php": 1539
             },
             "vars": "new_post_id, new_topic_id, row, to_forum_id",
             "since": "3.2.4-RC1",
@@ -1354,7 +1354,7 @@
         },
         "core.mcp_main_modify_fork_sql": {
             "loc": {
-                "includes\/mcp\/mcp_main.php": 1404
+                "includes\/mcp\/mcp_main.php": 1420
             },
             "vars": "sql_ary, topic_row",
             "since": "3.1.11-RC1",
@@ -1362,7 +1362,7 @@
         },
         "core.mcp_main_modify_shadow_sql": {
             "loc": {
-                "includes\/mcp\/mcp_main.php": 692
+                "includes\/mcp\/mcp_main.php": 708
             },
             "vars": "row, shadow",
             "since": "3.1.11-RC1",
@@ -1466,7 +1466,7 @@
         },
         "core.mcp_topic_modify_post_data": {
             "loc": {
-                "includes\/mcp\/mcp_topic.php": 221
+                "includes\/mcp\/mcp_topic.php": 243
             },
             "vars": "attachments, forum_id, id, mode, post_id_list, rowset, topic_id",
             "since": "3.1.7-RC1",
@@ -1474,7 +1474,7 @@
         },
         "core.mcp_topic_review_modify_row": {
             "loc": {
-                "includes\/mcp\/mcp_topic.php": 302
+                "includes\/mcp\/mcp_topic.php": 324
             },
             "vars": "current_row_number, forum_id, id, mode, post_row, row, start, topic_id, topic_info, total",
             "since": "3.1.4-RC1",
@@ -1482,7 +1482,7 @@
         },
         "core.mcp_topics_merge_posts_after": {
             "loc": {
-                "includes\/mcp\/mcp_topic.php": 803
+                "includes\/mcp\/mcp_topic.php": 825
             },
             "vars": "to_topic_id, topic_id",
             "since": "3.1.11-RC1",
@@ -1538,7 +1538,7 @@
         },
         "core.memberlist_memberrow_before": {
             "loc": {
-                "memberlist.php": 1678
+                "memberlist.php": 1689
             },
             "vars": "use_contact_fields, user_list",
             "since": "3.1.7-RC1",
@@ -1546,7 +1546,7 @@
         },
         "core.memberlist_modify_ip_search_sql_query": {
             "loc": {
-                "memberlist.php": 1135
+                "memberlist.php": 1146
             },
             "vars": "ipdomain, ips, sql",
             "since": "3.1.7-RC1",
@@ -1554,7 +1554,7 @@
         },
         "core.memberlist_modify_memberrow_sql": {
             "loc": {
-                "memberlist.php": 1624
+                "memberlist.php": 1635
             },
             "vars": "mode, sql_array, sql_from, sql_select, user_list",
             "since": "3.2.6-RC1",
@@ -1562,7 +1562,7 @@
         },
         "core.memberlist_modify_sort_pagination_params": {
             "loc": {
-                "memberlist.php": 1431
+                "memberlist.php": 1442
             },
             "vars": "first_char_block_vars, first_characters, params, sort_params, total_users, u_first_char_params",
             "since": "3.2.6-RC1",
@@ -1570,7 +1570,7 @@
         },
         "core.memberlist_modify_sql_query_data": {
             "loc": {
-                "memberlist.php": 1320
+                "memberlist.php": 1331
             },
             "vars": "order_by, sort_dir, sort_key, sort_key_sql, sql_from, sql_select, sql_where, sql_where_data",
             "since": "3.1.7-RC1",
@@ -1578,7 +1578,7 @@
         },
         "core.memberlist_modify_template_vars": {
             "loc": {
-                "memberlist.php": 1763
+                "memberlist.php": 1774
             },
             "vars": "params, sort_url, template_vars",
             "since": "3.2.2-RC1",
@@ -1642,7 +1642,7 @@
         },
         "core.message_list_actions": {
             "loc": {
-                "includes\/ucp\/ucp_pm_compose.php": 1490
+                "includes\/ucp\/ucp_pm_compose.php": 1503
             },
             "vars": "add_bcc, add_to, address_list, error, remove_g, remove_u",
             "since": "3.2.4-RC1",
@@ -1658,7 +1658,7 @@
         },
         "core.modify_attachment_data_on_submit": {
             "loc": {
-                "includes\/message_parser.php": 1621
+                "includes\/message_parser.php": 1650
             },
             "vars": "attachment_data",
             "since": "3.2.2-RC1",
@@ -1666,7 +1666,7 @@
         },
         "core.modify_attachment_data_on_upload": {
             "loc": {
-                "includes\/message_parser.php": 1766
+                "includes\/message_parser.php": 1795
             },
             "vars": "attachment_data",
             "since": "3.2.2-RC1",
@@ -1674,7 +1674,7 @@
         },
         "core.modify_attachment_sql_ary_on_submit": {
             "loc": {
-                "includes\/message_parser.php": 1598
+                "includes\/message_parser.php": 1627
             },
             "vars": "sql_ary",
             "since": "3.2.6-RC1",
@@ -1682,7 +1682,7 @@
         },
         "core.modify_attachment_sql_ary_on_upload": {
             "loc": {
-                "includes\/message_parser.php": 1743
+                "includes\/message_parser.php": 1772
             },
             "vars": "sql_ary",
             "since": "3.2.6-RC1",
@@ -1698,7 +1698,7 @@
         },
         "core.modify_email_headers": {
             "loc": {
-                "includes\/functions_messenger.php": 521
+                "includes\/functions_messenger.php": 520
             },
             "vars": "headers",
             "since": "3.1.11-RC1",
@@ -1762,7 +1762,7 @@
         },
         "core.modify_notification_message": {
             "loc": {
-                "includes\/functions_messenger.php": 359
+                "includes\/functions_messenger.php": 358
             },
             "vars": "break, message, method, subject",
             "since": "3.1.11-RC1",
@@ -1770,7 +1770,7 @@
         },
         "core.modify_notification_template": {
             "loc": {
-                "includes\/functions_messenger.php": 342
+                "includes\/functions_messenger.php": 341
             },
             "vars": "break, method, subject, template",
             "since": "3.2.4-RC1",
@@ -1786,7 +1786,7 @@
         },
         "core.modify_posting_auth": {
             "loc": {
-                "posting.php": 387
+                "posting.php": 406
             },
             "vars": "draft_id, error, forum_id, is_authed, load, mode, post_data, post_id, preview, refresh, save, submit, topic_id",
             "since": "3.1.3-RC1",
@@ -1802,7 +1802,7 @@
         },
         "core.modify_quickmod_actions": {
             "loc": {
-                "includes\/mcp\/mcp_main.php": 170
+                "includes\/mcp\/mcp_main.php": 186
             },
             "vars": "action, quickmod",
             "since": "3.1.0-a4",
@@ -1818,7 +1818,7 @@
         },
         "core.modify_submit_notification_data": {
             "loc": {
-                "includes\/functions_posting.php": 2304
+                "includes\/functions_posting.php": 2334
             },
             "vars": "data_ary, mode, notification_data, poster_id",
             "since": "3.2.4-RC1",
@@ -1826,7 +1826,7 @@
         },
         "core.modify_submit_post_data": {
             "loc": {
-                "includes\/functions_posting.php": 1507
+                "includes\/functions_posting.php": 1532
             },
             "vars": "data, mode, poll, subject, topic_type, update_message, update_search_index, username",
             "since": "3.1.0-a4",
@@ -1898,7 +1898,7 @@
         },
         "core.modify_username_string": {
             "loc": {
-                "includes\/functions_content.php": 1615
+                "includes\/functions_content.php": 1618
             },
             "vars": "_profile_cache, custom_profile_url, guest_username, mode, user_id, username, username_colour, username_string",
             "since": "3.1.0-a1",
@@ -1954,7 +1954,7 @@
         },
         "core.notification_message_email": {
             "loc": {
-                "includes\/functions_messenger.php": 584
+                "includes\/functions_messenger.php": 583
             },
             "vars": "addresses, break, msg, subject",
             "since": "3.2.4-RC1",
@@ -1962,7 +1962,7 @@
         },
         "core.notification_message_process": {
             "loc": {
-                "includes\/functions_messenger.php": 943
+                "includes\/functions_messenger.php": 942
             },
             "vars": "addresses, break, msg, subject",
             "since": "3.2.4-RC1",
@@ -1978,7 +1978,7 @@
         },
         "core.obtain_users_online_string_before_modify": {
             "loc": {
-                "includes\/functions.php": 3808
+                "includes\/functions.php": 3801
             },
             "vars": "item, item_id, online_users, rowset, user_online_link",
             "since": "3.1.10-RC1",
@@ -1986,7 +1986,7 @@
         },
         "core.obtain_users_online_string_modify": {
             "loc": {
-                "includes\/functions.php": 3868
+                "includes\/functions.php": 3861
             },
             "vars": "item, item_id, l_online_users, online_userlist, online_users, rowset, user_online_link",
             "since": "3.1.4-RC1",
@@ -1994,7 +1994,7 @@
         },
         "core.obtain_users_online_string_sql": {
             "loc": {
-                "includes\/functions.php": 3763
+                "includes\/functions.php": 3756
             },
             "vars": "item, item_id, online_users, sql_ary",
             "since": "3.1.4-RC1",
@@ -2002,7 +2002,7 @@
         },
         "core.page_footer": {
             "loc": {
-                "includes\/functions.php": 4737
+                "includes\/functions.php": 4735
             },
             "vars": "page_footer_override, run_cron",
             "since": "3.1.0-a1",
@@ -2010,7 +2010,7 @@
         },
         "core.page_footer_after": {
             "loc": {
-                "includes\/functions.php": 4804
+                "includes\/functions.php": 4802
             },
             "vars": "display_template, exit_handler",
             "since": "3.1.0-RC5",
@@ -2018,7 +2018,7 @@
         },
         "core.page_header": {
             "loc": {
-                "includes\/functions.php": 4261
+                "includes\/functions.php": 4254
             },
             "vars": "display_online_list, item, item_id, page_header_override, page_title",
             "since": "3.1.0-a1",
@@ -2026,7 +2026,7 @@
         },
         "core.page_header_after": {
             "loc": {
-                "includes\/functions.php": 4624
+                "includes\/functions.php": 4622
             },
             "vars": "display_online_list, http_headers, item, item_id, page_title",
             "since": "3.1.0-b3",
@@ -2090,7 +2090,7 @@
         },
         "core.phpbb_generate_debug_output": {
             "loc": {
-                "includes\/functions.php": 4707
+                "includes\/functions.php": 4705
             },
             "vars": "debug_info",
             "since": "3.1.0-RC3",
@@ -2114,7 +2114,7 @@
         },
         "core.posting_modify_cannot_edit_conditions": {
             "loc": {
-                "posting.php": 451
+                "posting.php": 470
             },
             "vars": "force_edit_allowed, post_data, s_cannot_edit, s_cannot_edit_locked, s_cannot_edit_time",
             "since": "3.1.0-b4",
@@ -2122,7 +2122,7 @@
         },
         "core.posting_modify_default_variables": {
             "loc": {
-                "posting.php": 612
+                "posting.php": 631
             },
             "vars": "post_data, uninit",
             "since": "3.2.5-RC1",
@@ -2130,7 +2130,7 @@
         },
         "core.posting_modify_message_text": {
             "loc": {
-                "posting.php": 998
+                "posting.php": 1020
             },
             "vars": "cancel, error, forum_id, load, message_parser, mode, post_data, post_id, preview, refresh, save, submit, topic_id",
             "since": "3.1.2-RC1",
@@ -2138,7 +2138,7 @@
         },
         "core.posting_modify_post_data": {
             "loc": {
-                "posting.php": 566
+                "posting.php": 585
             },
             "vars": "forum_id, mode, post_data, post_id, topic_id",
             "since": "3.2.2-RC1",
@@ -2146,7 +2146,7 @@
         },
         "core.posting_modify_quote_attributes": {
             "loc": {
-                "posting.php": 1664
+                "posting.php": 1686
             },
             "vars": "post_data, quote_attributes",
             "since": "3.2.6-RC1",
@@ -2154,7 +2154,7 @@
         },
         "core.posting_modify_submission_errors": {
             "loc": {
-                "posting.php": 1325
+                "posting.php": 1347
             },
             "vars": "error, forum_id, mode, poll, post_data, post_id, submit, topic_id",
             "since": "3.1.0-RC5",
@@ -2162,7 +2162,7 @@
         },
         "core.posting_modify_submit_post_after": {
             "loc": {
-                "posting.php": 1493
+                "posting.php": 1515
             },
             "vars": "data, forum_id, mode, poll, post_author_name, post_data, post_id, redirect_url, topic_id, update_message, update_subject",
             "since": "3.1.0-RC5",
@@ -2170,7 +2170,7 @@
         },
         "core.posting_modify_submit_post_before": {
             "loc": {
-                "posting.php": 1454
+                "posting.php": 1476
             },
             "vars": "data, forum_id, mode, poll, post_author_name, post_data, post_id, topic_id, update_message, update_subject",
             "since": "3.1.0-RC5",
@@ -2178,7 +2178,7 @@
         },
         "core.posting_modify_template_vars": {
             "loc": {
-                "posting.php": 1955
+                "posting.php": 1991
             },
             "vars": "cancel, draft_id, error, form_enctype, forum_id, load, message_parser, mode, moderators, page_data, page_title, post_data, post_id, preview, refresh, s_action, s_hidden_fields, s_topic_icons, save, submit, topic_id",
             "since": "3.1.0-a1",
@@ -2314,7 +2314,7 @@
         },
         "core.search_mysql_author_query_before": {
             "loc": {
-                "phpbb\/search\/fulltext_mysql.php": 819
+                "phpbb\/search\/fulltext_mysql.php": 827
             },
             "vars": "author_ary, author_name, ex_fid_ary, firstpost_only, m_approve_fid_sql, result_count, sort_by_sql, sort_days, sort_dir, sort_key, sql_author, sql_firstpost, sql_fora, sql_sort, sql_sort_join, sql_sort_table, sql_time, sql_topic_id, start, topic_id, type",
             "since": "3.1.5-RC1",
@@ -2322,7 +2322,7 @@
         },
         "core.search_mysql_by_author_modify_search_key": {
             "loc": {
-                "phpbb\/search\/fulltext_mysql.php": 712
+                "phpbb\/search\/fulltext_mysql.php": 720
             },
             "vars": "author_ary, author_name, ex_fid_ary, firstpost_only, post_visibility, search_key_array, sort_days, sort_key, topic_id, type",
             "since": "3.1.7-RC1",
@@ -2330,7 +2330,7 @@
         },
         "core.search_mysql_by_keyword_modify_search_key": {
             "loc": {
-                "phpbb\/search\/fulltext_mysql.php": 446
+                "phpbb\/search\/fulltext_mysql.php": 454
             },
             "vars": "author_ary, ex_fid_ary, fields, post_visibility, search_key_array, sort_days, sort_key, terms, topic_id, type",
             "since": "3.1.7-RC1",
@@ -2338,7 +2338,7 @@
         },
         "core.search_mysql_create_index_before": {
             "loc": {
-                "phpbb\/search\/fulltext_mysql.php": 1054
+                "phpbb\/search\/fulltext_mysql.php": 1062
             },
             "vars": "sql_queries, stats",
             "since": "3.2.3-RC1",
@@ -2346,7 +2346,7 @@
         },
         "core.search_mysql_delete_index_before": {
             "loc": {
-                "phpbb\/search\/fulltext_mysql.php": 1122
+                "phpbb\/search\/fulltext_mysql.php": 1130
             },
             "vars": "sql_queries, stats",
             "since": "3.2.3-RC1",
@@ -2354,7 +2354,7 @@
         },
         "core.search_mysql_index_before": {
             "loc": {
-                "phpbb\/search\/fulltext_mysql.php": 947
+                "phpbb\/search\/fulltext_mysql.php": 955
             },
             "vars": "forum_id, message, mode, post_id, poster_id, split_text, split_title, subject, words",
             "since": "3.2.3-RC1",
@@ -2362,7 +2362,7 @@
         },
         "core.search_mysql_keywords_main_query_before": {
             "loc": {
-                "phpbb\/search\/fulltext_mysql.php": 560
+                "phpbb\/search\/fulltext_mysql.php": 568
             },
             "vars": "author_ary, author_name, ex_fid_ary, join_topic, result_count, search_query, sort_by_sql, sort_days, sort_dir, sort_key, sql_match, sql_match_where, sql_sort, sql_sort_join, sql_sort_table, start, topic_id",
             "since": "3.1.5-RC1",
@@ -2610,7 +2610,7 @@
         },
         "core.submit_post_end": {
             "loc": {
-                "includes\/functions_posting.php": 2474
+                "includes\/functions_posting.php": 2504
             },
             "vars": "data, mode, poll, post_visibility, subject, topic_type, update_message, update_search_index, url, username",
             "since": "3.1.0-a3",
@@ -2618,7 +2618,7 @@
         },
         "core.submit_post_modify_sql_data": {
             "loc": {
-                "includes\/functions_posting.php": 1863
+                "includes\/functions_posting.php": 1888
             },
             "vars": "data, poll, post_mode, sql_data, subject, topic_type, username",
             "since": "3.1.3-RC1",
@@ -2706,7 +2706,7 @@
         },
         "core.topic_review_modify_post_list": {
             "loc": {
-                "includes\/functions_posting.php": 1040
+                "includes\/functions_posting.php": 1064
             },
             "vars": "attachments, cur_post_id, forum_id, mode, post_list, rowset, show_quote_button, topic_id",
             "since": "3.1.9-RC1",
@@ -2714,7 +2714,7 @@
         },
         "core.topic_review_modify_row": {
             "loc": {
-                "includes\/functions_posting.php": 1156
+                "includes\/functions_posting.php": 1180
             },
             "vars": "cur_post_id, current_row_number, forum_id, mode, post_row, row, topic_id",
             "since": "3.1.4-RC1",
@@ -2882,7 +2882,7 @@
         },
         "core.ucp_pm_compose_template": {
             "loc": {
-                "includes\/ucp\/ucp_pm_compose.php": 1264
+                "includes\/ucp\/ucp_pm_compose.php": 1277
             },
             "vars": "template_ary",
             "since": "3.2.6-RC1",
@@ -2986,7 +2986,7 @@
         },
         "core.ucp_profile_avatar_sql": {
             "loc": {
-                "includes\/ucp\/ucp_profile.php": 682
+                "includes\/ucp\/ucp_profile.php": 683
             },
             "vars": "result",
             "since": "3.1.11-RC1",
@@ -2994,7 +2994,7 @@
         },
         "core.ucp_profile_info_modify_sql_ary": {
             "loc": {
-                "includes\/ucp\/ucp_profile.php": 399
+                "includes\/ucp\/ucp_profile.php": 400
             },
             "vars": "cp_data, data, sql_ary",
             "since": "3.1.4-RC1",
@@ -3002,7 +3002,7 @@
         },
         "core.ucp_profile_modify_profile_info": {
             "loc": {
-                "includes\/ucp\/ucp_profile.php": 319
+                "includes\/ucp\/ucp_profile.php": 320
             },
             "vars": "data, submit",
             "since": "3.1.4-RC1",
@@ -3010,7 +3010,7 @@
         },
         "core.ucp_profile_modify_signature": {
             "loc": {
-                "includes\/ucp\/ucp_profile.php": 529
+                "includes\/ucp\/ucp_profile.php": 530
             },
             "vars": "enable_bbcode, enable_smilies, enable_urls, error, preview, signature, submit",
             "since": "3.1.10-RC1",
@@ -3018,7 +3018,7 @@
         },
         "core.ucp_profile_modify_signature_sql_ary": {
             "loc": {
-                "includes\/ucp\/ucp_profile.php": 580
+                "includes\/ucp\/ucp_profile.php": 581
             },
             "vars": "sql_ary",
             "since": "3.1.10-RC1",
@@ -3034,7 +3034,7 @@
         },
         "core.ucp_profile_reg_details_sql_ary": {
             "loc": {
-                "includes\/ucp\/ucp_profile.php": 221
+                "includes\/ucp\/ucp_profile.php": 222
             },
             "vars": "data, sql_ary",
             "since": "3.1.4-RC1",
@@ -3050,7 +3050,7 @@
         },
         "core.ucp_profile_validate_profile_info": {
             "loc": {
-                "includes\/ucp\/ucp_profile.php": 366
+                "includes\/ucp\/ucp_profile.php": 367
             },
             "vars": "data, error, submit",
             "since": "3.1.4-RC1",
@@ -3226,7 +3226,7 @@
         },
         "core.user_set_default_group": {
             "loc": {
-                "includes\/functions_user.php": 3449
+                "includes\/functions_user.php": 3453
             },
             "vars": "group_attributes, group_id, sql_ary, update_listing, user_id_ary",
             "since": "3.1.0-a1",
@@ -3234,7 +3234,7 @@
         },
         "core.user_set_group_attributes": {
             "loc": {
-                "includes\/functions_user.php": 3251
+                "includes\/functions_user.php": 3255
             },
             "vars": "action, group_attributes, group_id, group_name, user_id_ary, username_ary",
             "since": "3.1.10-RC1",
@@ -3266,7 +3266,7 @@
         },
         "core.validate_bbcode_by_extension": {
             "loc": {
-                "includes\/message_parser.php": 2055
+                "includes\/message_parser.php": 2084
             },
             "vars": "params_array, return",
             "since": "3.1.5-RC1",
@@ -3274,7 +3274,7 @@
         },
         "core.validate_config_variable": {
             "loc": {
-                "includes\/functions_acp.php": 633
+                "includes\/functions_acp.php": 634
             },
             "vars": "cfg_array, config_definition, config_name, error",
             "since": "3.1.0-a1",
@@ -3282,7 +3282,7 @@
         },
         "core.viewforum_generate_page_after": {
             "loc": {
-                "viewforum.php": 1048
+                "viewforum.php": 1045
             },
             "vars": "forum_data",
             "since": "3.2.2-RC1",
@@ -3290,7 +3290,7 @@
         },
         "core.viewforum_get_announcement_topic_ids_data": {
             "loc": {
-                "viewforum.php": 551
+                "viewforum.php": 548
             },
             "vars": "forum_data, forum_id, g_forum_ary, sql_anounce_array, sql_ary",
             "since": "3.1.10-RC1",
@@ -3298,7 +3298,7 @@
         },
         "core.viewforum_get_shadowtopic_data": {
             "loc": {
-                "viewforum.php": 758
+                "viewforum.php": 755
             },
             "vars": "sql_array",
             "since": "3.1.0-a1",
@@ -3306,7 +3306,7 @@
         },
         "core.viewforum_get_topic_data": {
             "loc": {
-                "viewforum.php": 483
+                "viewforum.php": 480
             },
             "vars": "forum_data, forum_id, sort_days, sort_dir, sort_key, sql_array, topics_count",
             "since": "3.1.0-a1",
@@ -3314,7 +3314,7 @@
         },
         "core.viewforum_get_topic_ids_data": {
             "loc": {
-                "viewforum.php": 695
+                "viewforum.php": 692
             },
             "vars": "forum_data, sql_approved, sql_ary, sql_limit, sql_limit_time, sql_sort_order, sql_start, sql_where, store_reverse",
             "since": "3.1.0-RC4",
@@ -3330,7 +3330,7 @@
         },
         "core.viewforum_modify_sort_data_sql": {
             "loc": {
-                "viewforum.php": 346
+                "viewforum.php": 343
             },
             "vars": "forum_id, sort_days, sort_dir, sort_key, sql_array, start",
             "since": "3.1.9-RC1",
@@ -3338,7 +3338,7 @@
         },
         "core.viewforum_modify_sort_direction": {
             "loc": {
-                "viewforum.php": 628
+                "viewforum.php": 625
             },
             "vars": "direction",
             "since": "3.2.5-RC1",
@@ -3346,7 +3346,7 @@
         },
         "core.viewforum_modify_topic_ordering": {
             "loc": {
-                "viewforum.php": 303
+                "viewforum.php": 300
             },
             "vars": "sort_by_sql, sort_by_text",
             "since": "3.2.5-RC1",
@@ -3354,7 +3354,7 @@
         },
         "core.viewforum_modify_topicrow": {
             "loc": {
-                "viewforum.php": 1001
+                "viewforum.php": 998
             },
             "vars": "row, s_type_switch, s_type_switch_test, topic_row",
             "since": "3.1.0-a1",
@@ -3362,7 +3362,7 @@
         },
         "core.viewforum_modify_topics_data": {
             "loc": {
-                "viewforum.php": 838
+                "viewforum.php": 835
             },
             "vars": "forum_id, rowset, topic_list, total_topic_count",
             "since": "3.1.0-b3",
@@ -3370,7 +3370,7 @@
         },
         "core.viewforum_topic_row_after": {
             "loc": {
-                "viewforum.php": 1029
+                "viewforum.php": 1026
             },
             "vars": "row, rowset, s_type_switch, topic_id, topic_list, topic_row",
             "since": "3.1.3-RC1",
@@ -3410,7 +3410,7 @@
         },
         "core.viewtopic_add_quickmod_option_before": {
             "loc": {
-                "viewtopic.php": 665
+                "viewtopic.php": 697
             },
             "vars": "allow_change_type, forum_id, post_id, quickmod_array, topic_data, topic_id, topic_tracking_info, viewtopic_url",
             "since": "3.1.9-RC1",
@@ -3418,7 +3418,7 @@
         },
         "core.viewtopic_assign_template_vars_before": {
             "loc": {
-                "viewtopic.php": 744
+                "viewtopic.php": 776
             },
             "vars": "base_url, forum_id, post_id, quickmod_array, start, topic_data, topic_id, topic_tracking_info, total_posts, viewtopic_url",
             "since": "3.1.0-RC4",
@@ -3434,7 +3434,7 @@
         },
         "core.viewtopic_cache_guest_data": {
             "loc": {
-                "viewtopic.php": 1416
+                "viewtopic.php": 1448
             },
             "vars": "poster_id, row, user_cache_data",
             "since": "3.1.0-a1",
@@ -3442,7 +3442,7 @@
         },
         "core.viewtopic_cache_user_data": {
             "loc": {
-                "viewtopic.php": 1483
+                "viewtopic.php": 1515
             },
             "vars": "poster_id, row, user_cache_data",
             "since": "3.1.0-a1",
@@ -3450,7 +3450,7 @@
         },
         "core.viewtopic_get_post_data": {
             "loc": {
-                "viewtopic.php": 1289
+                "viewtopic.php": 1321
             },
             "vars": "forum_id, post_list, sort_days, sort_dir, sort_key, sql_ary, start, topic_data, topic_id",
             "since": "3.1.0-a1",
@@ -3458,7 +3458,7 @@
         },
         "core.viewtopic_highlight_modify": {
             "loc": {
-                "viewtopic.php": 545
+                "viewtopic.php": 577
             },
             "vars": "highlight, highlight_match, start, topic_data, total_posts, viewtopic_url",
             "since": "3.1.11-RC1",
@@ -3474,7 +3474,7 @@
         },
         "core.viewtopic_modify_page_title": {
             "loc": {
-                "viewtopic.php": 2370
+                "viewtopic.php": 2402
             },
             "vars": "forum_id, page_title, post_list, start, topic_data",
             "since": "3.1.0-a1",
@@ -3482,7 +3482,7 @@
         },
         "core.viewtopic_modify_poll_ajax_data": {
             "loc": {
-                "viewtopic.php": 1042
+                "viewtopic.php": 1074
             },
             "vars": "data, forum_id, poll_info, topic_data, valid_user_votes, vote_counts",
             "since": "3.2.4-RC1",
@@ -3490,7 +3490,7 @@
         },
         "core.viewtopic_modify_poll_data": {
             "loc": {
-                "viewtopic.php": 911
+                "viewtopic.php": 943
             },
             "vars": "cur_voted_id, forum_id, poll_info, s_can_vote, s_display_results, topic_data, topic_id, viewtopic_url, vote_counts, voted_id",
             "since": "3.1.5-RC1",
@@ -3498,7 +3498,7 @@
         },
         "core.viewtopic_modify_poll_template_data": {
             "loc": {
-                "viewtopic.php": 1141
+                "viewtopic.php": 1173
             },
             "vars": "cur_voted_id, poll_end, poll_info, poll_most, poll_options_template_data, poll_template_data, poll_total, topic_data, viewtopic_url, vote_counts, voted_id",
             "since": "3.1.5-RC1",
@@ -3506,7 +3506,7 @@
         },
         "core.viewtopic_modify_post_action_conditions": {
             "loc": {
-                "viewtopic.php": 1946
+                "viewtopic.php": 1978
             },
             "vars": "force_delete_allowed, force_edit_allowed, force_softdelete_allowed, row, s_cannot_delete, s_cannot_delete_lastpost, s_cannot_delete_locked, s_cannot_delete_time, s_cannot_edit, s_cannot_edit_locked, s_cannot_edit_time, topic_data",
             "since": "3.1.0-b4",
@@ -3514,7 +3514,7 @@
         },
         "core.viewtopic_modify_post_data": {
             "loc": {
-                "viewtopic.php": 1706
+                "viewtopic.php": 1738
             },
             "vars": "attachments, can_receive_pm_list, display_notice, forum_id, has_approved_attachments, permanently_banned_users, post_list, rowset, sort_days, sort_dir, sort_key, start, topic_data, topic_id, user_cache",
             "since": "3.1.0-RC3",
@@ -3522,7 +3522,7 @@
         },
         "core.viewtopic_modify_post_list_sql": {
             "loc": {
-                "viewtopic.php": 1215
+                "viewtopic.php": 1247
             },
             "vars": "forum_id, sort_days, sort_key, sql, sql_limit, sql_start",
             "since": "3.2.4-RC1",
@@ -3530,7 +3530,7 @@
         },
         "core.viewtopic_modify_post_row": {
             "loc": {
-                "viewtopic.php": 2122
+                "viewtopic.php": 2154
             },
             "vars": "attachments, cp_row, current_row_number, end, post_edit_list, post_row, poster_id, row, start, topic_data, total_posts, user_cache, user_poster_data",
             "since": "3.1.0-a1",
@@ -3538,7 +3538,7 @@
         },
         "core.viewtopic_post_row_after": {
             "loc": {
-                "viewtopic.php": 2219
+                "viewtopic.php": 2251
             },
             "vars": "attachments, cp_row, current_row_number, end, post_row, row, start, topic_data, total_posts, user_poster_data",
             "since": "3.1.0-a3",
@@ -3546,11 +3546,115 @@
         },
         "core.viewtopic_post_rowset_data": {
             "loc": {
-                "viewtopic.php": 1368
+                "viewtopic.php": 1400
             },
             "vars": "row, rowset_data",
             "since": "3.1.0-a1",
             "explain": "Modify the post rowset containing data to be displayed with posts"
+        },
+        "core.confirm_box_ajax_before": {
+            "loc": {
+                "includes\/functions.php": 2263
+            },
+            "vars": "data, hidden, s_hidden_fields, u_action",
+            "since": "3.2.8-RC1",
+            "explain": "This event allows an extension to modify the ajax output of confirm box."
+        },
+        "core.get_group_rank_after": {
+            "loc": {
+                "phpbb\/group\/helper.php": 274
+            },
+            "vars": "group_data, group_rank_data",
+            "since": "3.2.8-RC1",
+            "explain": "Modify a group's rank before displaying"
+        },
+        "core.get_group_rank_before": {
+            "loc": {
+                "phpbb\/group\/helper.php": 241
+            },
+            "vars": "group_data",
+            "since": "3.2.8-RC1",
+            "explain": "Preparing a group's rank before displaying"
+        },
+        "core.mcp_main_before": {
+            "loc": {
+                "includes\/mcp\/mcp_main.php": 58
+            },
+            "vars": "action, mode, quickmod",
+            "since": "3.2.8-RC1",
+            "explain": "Event to perform additional actions before an MCP action is executed."
+        },
+        "core.mcp_topic_modify_sql_ary": {
+            "loc": {
+                "includes\/mcp\/mcp_topic.php": 170
+            },
+            "vars": "sql_ary",
+            "since": "3.2.8-RC1",
+            "explain": "Event to modify the SQL query before the MCP topic review posts is queried"
+        },
+        "core.message_history_modify_sql_ary": {
+            "loc": {
+                "includes\/functions_privmsgs.php": 2026
+            },
+            "vars": "sql_ary",
+            "since": "3.2.8-RC1",
+            "explain": "Event to modify the SQL query before the message history in private message is queried"
+        },
+        "core.message_history_modify_template_vars": {
+            "loc": {
+                "includes\/functions_privmsgs.php": 2149
+            },
+            "vars": "row, template_vars",
+            "since": "3.2.8-RC1",
+            "explain": "Modify the template vars for displaying the message history in private message"
+        },
+        "core.modify_group_name_string": {
+            "loc": {
+                "phpbb\/group\/helper.php": 209
+            },
+            "vars": "custom_profile_url, group_colour, group_id, group_name, group_name_string, mode, name_strings",
+            "since": "3.2.8-RC1",
+            "explain": "Use this event to change the output of the group name"
+        },
+        "core.pm_modify_message_subject": {
+            "loc": {
+                "includes\/ucp\/ucp_pm_compose.php": 1022
+            },
+            "vars": "message_subject",
+            "since": "3.2.8-RC1",
+            "explain": "This event allows you to modify the PM subject of the PM being quoted"
+        },
+        "core.posting_modify_post_subject": {
+            "loc": {
+                "posting.php": 1707
+            },
+            "vars": "post_subject",
+            "since": "3.2.8-RC1",
+            "explain": "This event allows you to modify the post subject of the post being quoted"
+        },
+        "core.posting_modify_row_data": {
+            "loc": {
+                "posting.php": 242
+            },
+            "vars": "forum_id, mode, post_data, topic_id",
+            "since": "3.2.8-RC1",
+            "explain": "This event allows you to bypass reply\/quote test of an unapproved post."
+        },
+        "core.topic_review_modify_sql_ary": {
+            "loc": {
+                "includes\/functions_posting.php": 1003
+            },
+            "vars": "cur_post_id, forum_id, mode, post_list, show_quote_button, sql_ary, topic_id",
+            "since": "3.2.8-RC1",
+            "explain": "Event to modify the SQL query for topic reviews"
+        },
+        "core.viewtopic_gen_sort_selects_before": {
+            "loc": {
+                "viewtopic.php": 486
+            },
+            "vars": "join_user_sql, limit_days, s_limit_days, s_sort_dir, s_sort_key, sort_by_sql, sort_by_text, sort_days, sort_dir, sort_key, u_sort_param",
+            "since": "3.2.8-RC1",
+            "explain": "Event to add new sorting options"
         }
     },
     "template": {
@@ -3843,14 +3947,14 @@
         },
         "mcp_forum_actions_after": {
             "loc": {
-                "mcp_forum.html": 150
+                "mcp_forum.html": 152
             },
             "since": "3.1.11-RC1",
             "explain": "Add some information after actions fieldset"
         },
         "mcp_forum_actions_append": {
             "loc": {
-                "mcp_forum.html": 143
+                "mcp_forum.html": 145
             },
             "since": "3.1.11-RC1",
             "explain": "Add additional options to actions select",
@@ -3858,7 +3962,7 @@
         },
         "mcp_forum_actions_before": {
             "loc": {
-                "mcp_forum.html": 127
+                "mcp_forum.html": 129
             },
             "since": "3.1.11-RC1",
             "explain": "Add some information before actions fieldset"
@@ -5017,7 +5121,7 @@
         },
         "search_results_content_after": {
             "loc": {
-                "search_results.html": 197
+                "search_results.html": 199
             },
             "since": "3.2.4-RC1",
             "explain": "Add content after the message content in search results"
@@ -5052,42 +5156,42 @@
         },
         "search_results_post_after": {
             "loc": {
-                "search_results.html": 213
+                "search_results.html": 215
             },
             "since": "3.1.0-b3",
             "explain": "Add data after search result posts"
         },
         "search_results_post_author_username_append": {
             "loc": {
-                "search_results.html": 184
+                "search_results.html": 186
             },
             "since": "3.2.4-RC1",
             "explain": "Append information to post author username of member"
         },
         "search_results_post_author_username_prepend": {
             "loc": {
-                "search_results.html": 184
+                "search_results.html": 186
             },
             "since": "3.2.4-RC1",
             "explain": "Prepend information to post author username of member"
         },
         "search_results_post_before": {
             "loc": {
-                "search_results.html": 173
+                "search_results.html": 175
             },
             "since": "3.1.0-b3",
             "explain": "Add data before search result posts"
         },
         "search_results_postprofile_after": {
             "loc": {
-                "search_results.html": 191
+                "search_results.html": 193
             },
             "since": "3.1.0-b3",
             "explain": "Add content after the post author and stats in search results (posts view mode)"
         },
         "search_results_postprofile_before": {
             "loc": {
-                "search_results.html": 183
+                "search_results.html": 185
             },
             "since": "3.1.0-b3",
             "explain": "Add content directly before the post author in search results (posts view mode)"
@@ -5101,21 +5205,21 @@
         },
         "search_results_topic_after": {
             "loc": {
-                "search_results.html": 156
+                "search_results.html": 158
             },
             "since": "3.1.0-b4",
             "explain": "Add data after search result topics"
         },
         "search_results_topic_author_username_append": {
             "loc": {
-                "search_results.html": 120
+                "search_results.html": 121
             },
             "since": "3.2.4-RC1",
             "explain": "Append information to topic author username of member"
         },
         "search_results_topic_author_username_prepend": {
             "loc": {
-                "search_results.html": 120
+                "search_results.html": 121
             },
             "since": "3.2.4-RC1",
             "explain": "Prepend information to topic author username of member"
@@ -5129,7 +5233,7 @@
         },
         "search_results_topic_title_after": {
             "loc": {
-                "search_results.html": 188
+                "search_results.html": 190
             },
             "since": "3.1.11-RC1",
             "explain": "Add data after search results topic title"
@@ -5180,9 +5284,9 @@
         },
         "topiclist_row_append": {
             "loc": {
-                "search_results.html": 139,
-                "viewforum_body.html": 221,
-                "mcp_forum.html": 91
+                "search_results.html": 141,
+                "viewforum_body.html": 223,
+                "mcp_forum.html": 93
             },
             "since": "3.1.0-a1",
             "explain": "Add content into topic rows (inside the elements containing topic titles)"
@@ -5550,28 +5654,28 @@
         },
         "viewforum_body_topic_author_username_append": {
             "loc": {
-                "viewforum_body.html": 201
+                "viewforum_body.html": 202
             },
             "since": "3.2.4-RC1",
             "explain": "Append information to topic author username of member"
         },
         "viewforum_body_topic_author_username_prepend": {
             "loc": {
-                "viewforum_body.html": 201
+                "viewforum_body.html": 202
             },
             "since": "3.2.4-RC1",
             "explain": "Prepend information to topic author username of member"
         },
         "viewforum_body_topic_row_after": {
             "loc": {
-                "viewforum_body.html": 239
+                "viewforum_body.html": 241
             },
             "since": "3.1.7-RC1",
             "explain": "Add content after the topic list item."
         },
         "viewforum_body_topic_row_append": {
             "loc": {
-                "viewforum_body.html": 237
+                "viewforum_body.html": 239
             },
             "since": "3.1.7-RC1",
             "explain": "Add content at the start of the topic list item."
@@ -5599,14 +5703,14 @@
         },
         "viewforum_buttons_bottom_after": {
             "loc": {
-                "viewforum_body.html": 276
+                "viewforum_body.html": 278
             },
             "since": "3.1.0-RC5",
             "explain": "Add buttons after New Topic button on the bottom of the topic's list"
         },
         "viewforum_buttons_bottom_before": {
             "loc": {
-                "viewforum_body.html": 266
+                "viewforum_body.html": 268
             },
             "since": "3.1.0-RC5",
             "explain": "Add buttons before New Topic button on the bottom of the topic's list"
@@ -6009,6 +6113,94 @@
             },
             "since": "3.1.0-a3",
             "explain": "Add a new topic tool before the rest of the existing ones"
+        },
+        "mcp_move_destination_forum_after": {
+            "loc": {
+                "mcp_move.html": 53
+            },
+            "since": "3.2.8-RC1",
+            "explain": "Add content after the destination select element in the move topic\/post form"
+        },
+        "mcp_move_destination_forum_before": {
+            "loc": {
+                "mcp_move.html": 46
+            },
+            "since": "3.2.8-RC1",
+            "explain": "Add content before the destination select element in the move topic\/post form"
+        },
+        "mcp_topic_post_author_full_append": {
+            "loc": {
+                "mcp_topic.html": 123
+            },
+            "since": "3.2.8-RC1",
+            "explain": "Append information to message author username for post details in topic moderation"
+        },
+        "mcp_topic_post_author_full_prepend": {
+            "loc": {
+                "mcp_topic.html": 123
+            },
+            "since": "3.2.8-RC1",
+            "explain": "Prepend information to message author username for post details in topic moderation"
+        },
+        "posting_review_row_post_author_username_append": {
+            "loc": {
+                "posting_review.html": 25
+            },
+            "since": "3.2.8-RC1",
+            "explain": "Append information to post author username of member"
+        },
+        "posting_review_row_post_author_username_prepend": {
+            "loc": {
+                "posting_review.html": 25
+            },
+            "since": "3.2.8-RC1",
+            "explain": "Prepend information to post author username of member"
+        },
+        "posting_topic_review_row_post_author_username_append": {
+            "loc": {
+                "posting_topic_review.html": 57
+            },
+            "since": "3.2.8-RC1",
+            "explain": "Append information to post author username of member"
+        },
+        "posting_topic_review_row_post_author_username_prepend": {
+            "loc": {
+                "posting_topic_review.html": 57
+            },
+            "since": "3.2.8-RC1",
+            "explain": "Prepend information to post author username of member"
+        },
+        "topiclist_row_topic_by_author_after": {
+            "loc": {
+                "search_results.html": 122,
+                "viewforum_body.html": 203,
+                "mcp_forum.html": 91
+            },
+            "since": "3.2.8-RC1",
+            "explain": "Add content into topic rows (after the \"by topic author\" row)"
+        },
+        "topiclist_row_topic_by_author_before": {
+            "loc": {
+                "search_results.html": 120,
+                "viewforum_body.html": 201,
+                "mcp_forum.html": 89
+            },
+            "since": "3.2.8-RC1",
+            "explain": "Add content into topic rows (before the \"by topic author\" row)"
+        },
+        "ucp_pm_history_row_message_author_username_append": {
+            "loc": {
+                "ucp_pm_history.html": 39
+            },
+            "since": "3.2.8-RC1",
+            "explain": "Append information to message author username of member"
+        },
+        "ucp_pm_history_row_message_author_username_prepend": {
+            "loc": {
+                "ucp_pm_history.html": 39
+            },
+            "since": "3.2.8-RC1",
+            "explain": "Prepend information to message author username of member"
         }
     },
     "template_acp": {

@@ -462,6 +462,19 @@ class php_event_listener implements EventSubscriberInterface
 			'core.viewtopic_modify_post_row' => 'add',
 			'core.viewtopic_post_row_after' => 'add',
 			'core.viewtopic_post_rowset_data' => 'add',
+			'core.confirm_box_ajax_before' => 'add',
+			'core.get_group_rank_after' => 'add',
+			'core.get_group_rank_before' => 'add',
+			'core.mcp_main_before' => 'add',
+			'core.mcp_topic_modify_sql_ary' => 'add',
+			'core.message_history_modify_sql_ary' => 'add',
+			'core.message_history_modify_template_vars' => 'add',
+			'core.modify_group_name_string' => 'add',
+			'core.pm_modify_message_subject' => 'add',
+			'core.posting_modify_post_subject' => 'add',
+			'core.posting_modify_row_data' => 'add',
+			'core.topic_review_modify_sql_ary' => 'add',
+			'core.viewtopic_gen_sort_selects_before' => 'add',
 
 		];
 	}
