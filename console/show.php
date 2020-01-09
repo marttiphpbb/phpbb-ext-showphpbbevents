@@ -12,26 +12,28 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Style\SymfonyStyle;
-use Symfony\Component\Console\Formatter\OutputFormatterStyle;
 use phpbb\console\command\command;
 use phpbb\user;
 use marttiphpbb\showphpbbevents\service\events_cache;
 use marttiphpbb\showphpbbevents\service\events_store;
-use marttiphpbb\showphpbbevents\util\event_type;
 
 class show extends command
 {
 	protected $events_cache;
 	protected $events_store;
 
-	public function __construct(user $user, events_cache $events_cache, events_store $events_store)
+	public function __construct(
+		user $user,
+		events_cache $events_cache,
+		events_store $events_store
+	)
 	{
 		$this->events_cache = $events_cache;
 		$this->events_store = $events_store;
 		parent::__construct($user);
 	}
 
-	protected function configure()
+	protected function configure():void
 	{
 		$this
 			->setName('ext-showphpbbevents:show')
@@ -42,7 +44,7 @@ class show extends command
 		;
 	}
 
-	protected function execute(InputInterface $input, OutputInterface $output)
+	protected function execute(InputInterface $input, OutputInterface $output):void
 	{
 		$io = new SymfonyStyle($input, $output);
 

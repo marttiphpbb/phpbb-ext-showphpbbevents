@@ -29,24 +29,22 @@ class php_event_listener implements EventSubscriberInterface
 {
 	protected $count_ary = [];
 
-	static public function getSubscribedEvents()
+	static public function getSubscribedEvents():array
 	{
 		return [
 %ary%
 		];
 	}
 
-	public function add(Event $event)
+	public function add(Event $event, $event_name):void
 	{
-		$name = $event->getName();
-
-		if (isset($this->count_ary[$name]))
+		if (isset($this->count_ary[$event_name]))
 		{
-			$this->count_ary[$name]++;
+			$this->count_ary[$event_name]++;
 			return;
 		}
 
-		$this->count_ary[$name] = 1;
+		$this->count_ary[$event_name] = 1;
 	}
 
 	public function get_count_ary():array
@@ -56,7 +54,7 @@ class php_event_listener implements EventSubscriberInterface
 }
 EOT;
 
-	public static function write_file(array $php_events)
+	public static function write_file(array $php_events):void
 	{
 		file_put_contents(self::FILE, self::get($php_events));
 	}

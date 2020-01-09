@@ -21,7 +21,6 @@ use marttiphpbb\showphpbbevents\util\generate_php_listener;
 use marttiphpbb\showphpbbevents\util\generate_template_listener;
 use marttiphpbb\showphpbbevents\event\php_event_listener;
 use Symfony\Component\Finder\Finder;
-use marttiphpbb\showphpbbevents\model\template;
 
 class verify extends command
 {
@@ -35,7 +34,7 @@ class verify extends command
 		parent::__construct($user);
 	}
 
-	protected function configure()
+	protected function configure():void
 	{
 		$this
 			->setName('ext-showphpbbevents:verify')
@@ -46,7 +45,7 @@ class verify extends command
 		;
 	}
 
-	protected function execute(InputInterface $input, OutputInterface $output)
+	protected function execute(InputInterface $input, OutputInterface $output):void
 	{
 		$io = new SymfonyStyle($input, $output);
 

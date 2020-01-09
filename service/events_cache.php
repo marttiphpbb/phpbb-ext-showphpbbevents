@@ -24,7 +24,7 @@ class events_cache
 		$this->events_store = $events_store;
 	}
 
-    private function load()
+    private function load():void
     {
 		if (!$this->events)
 		{
@@ -38,12 +38,12 @@ class events_cache
 		}
     }
 
-    private function write()
+    private function write():void
     {
 		$this->cache->put(self::LOCATION, $this->events);
     }
 
-    public function set_all(array $events)
+    public function set_all(array $events):void
     {
 		$this->events = $events;
 		$this->write();
@@ -61,14 +61,14 @@ class events_cache
 		return $this->events[$type][$event_name];
 	}
 
-	public function set(string $type, string $event_name, array $event_data)
+	public function set(string $type, string $event_name, array $event_data):void
 	{
 		$this->load();
 		$this->events[$type][$event_name] = $event_data;
 		$this->write();
 	}
 
-	public function mset(string $type, string $event_name, string $key, $value)
+	public function mset(string $type, string $event_name, string $key, $value):void
 	{
 		$this->load();
 		$this->events[$type][$event_name][$key] = $value;

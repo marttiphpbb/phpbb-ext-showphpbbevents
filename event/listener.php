@@ -37,7 +37,7 @@ class listener implements EventSubscriberInterface
 		$this->php_event_listener = $php_event_listener;
 	}
 
-	static public function getSubscribedEvents()
+	static public function getSubscribedEvents():array
 	{
 		return [
 			'core.user_setup'		=> 'core_user_setup',
@@ -47,7 +47,7 @@ class listener implements EventSubscriberInterface
 		];
 	}
 
-	public function core_user_setup(event $event)
+	public function core_user_setup(event $event):void
 	{
 		$lang_set_ext = $event['lang_set_ext'];
 
@@ -59,7 +59,7 @@ class listener implements EventSubscriberInterface
 		$event['lang_set_ext'] = $lang_set_ext;
 	}
 
-	public function core_append_sid(event $event)
+	public function core_append_sid(event $event):void
 	{
 		$params = $event['params'];
 
@@ -96,7 +96,7 @@ class listener implements EventSubscriberInterface
 		}
 	}
 
-	public function core_twig_environment_render_template_before(event $event)
+	public function core_twig_environment_render_template_before(event $event):void
 	{
 		$context = $event['context'];
 

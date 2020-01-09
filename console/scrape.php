@@ -30,7 +30,7 @@ class scrape extends command
 		parent::__construct($user);
 	}
 
-	protected function configure()
+	protected function configure():void
 	{
 		$this
 			->setName('ext-showphpbbevents:scrape')
@@ -40,7 +40,7 @@ class scrape extends command
 		;
 	}
 
-	protected function execute(InputInterface $input, OutputInterface $output)
+	protected function execute(InputInterface $input, OutputInterface $output):void
 	{
 		$version = $input->getArgument('version');
 		$events = [];
