@@ -3,10 +3,10 @@
 	"type": "phpbb-extension",
 	"description": "This extension for developers shows all phpBB core template and PHP events (phpBB 3.3.0)",
 	"homepage": "https://github.com/marttiphpbb/phpbb-ext-showphpbbevents",
-	"version": "2.0.0",
-	"time": "2020-01-09",
+	"version": "2.1.0",
+	"time": "2020-02-07",
 	"keywords": ["phpbb", "extension", "template", "PHP", "events", "development"],
-	"license": "GPL-2.0",
+	"license": "GPL-2.0-only",
 	"authors": [{
 			"name": "martti",
 			"email": "phpbb@martti.be",

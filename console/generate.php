@@ -37,7 +37,7 @@ class generate extends command
 	{
 		$this
 			->setName('ext-showphpbbevents:generate')
-			->setDescription('For Development: Generate and write the event listener files from the data of events_data.json.')
+			->setDescription('For Development (step 4): Generate and write the event listener files from the data of events_data.json.')
 			->setHelp('This command was created for the development of the marttiphpbb-showphpbbevents extension.')
 			->addArgument('type', InputArgument::OPTIONAL, 'all (default), template, acp or php')
 			->addOption('delete', 'd', InputOption::VALUE_NONE, 'Delete obsolete files (events not present in events_data.json)')

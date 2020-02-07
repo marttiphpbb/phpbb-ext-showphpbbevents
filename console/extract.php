@@ -68,7 +68,7 @@ class extract extends command
 	{
 		$this
 			->setName('ext-showphpbbevents:extract')
-			->setDescription('For Development: Extract events data from the local phpBB files and load into cache.')
+			->setDescription('For Development (step 2): Extract events data from the local phpBB files and load into cache.')
 			->setHelp('This command was created for the development of the marttiphpbb-showphpbbevents extension.')
 		;
 	}

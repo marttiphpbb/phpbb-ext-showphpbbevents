@@ -34,7 +34,7 @@ class scrape extends command
 	{
 		$this
 			->setName('ext-showphpbbevents:scrape')
-			->setDescription('For Development: Scrape events data from ' . self::URL . ' and load into cache.')
+			->setDescription('For Development (step 1): Scrape events data from ' . self::URL . ' and load into cache.')
 			->setHelp('This command was created for the development of the marttiphpbb-showphpbbevents extension.')
 			->addArgument('version', InputArgument::OPTIONAL, 'Only scrape events from newest version in "Release Highlights" (' . self::URL_HI . ').')
 		;

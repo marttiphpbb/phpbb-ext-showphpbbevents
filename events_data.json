@@ -200,6 +200,14 @@
             "since": "3.1.0-a1",
             "explain": "Event when we move content from one forum to another"
         },
+        "core.acp_manage_forums_move_content_after": {
+            "loc": {
+                "includes\/acp\/acp_forums.php": 1603
+            },
+            "vars": "from_id, sync, to_id",
+            "since": "3.2.9-RC1",
+            "explain": "Event when content has been moved from one forum to another"
+        },
         "core.acp_manage_forums_move_content_sql_before": {
             "loc": {
                 "includes\/acp\/acp_forums.php": 1572
@@ -592,6 +600,14 @@
             "since": "3.1.0-a1",
             "explain": "Main event which is triggered on every pageYou can use this event to load function files and initiate objectsNOTE: At this point the global session ($user) and permissions ($auth)do NOT exist yet. If you need to use the user object(f.e. to include language files) or need to check permissions,please use the core.user_setup event instead!"
         },
+        "core.confirm_box_ajax_before": {
+            "loc": {
+                "includes\/functions.php": 2239
+            },
+            "vars": "data, hidden, s_hidden_fields, u_action",
+            "since": "3.2.8-RC1",
+            "explain": "This event allows an extension to modify the ajax output of confirm box."
+        },
         "core.decode_message_after": {
             "loc": {
                 "includes\/functions_content.php": 522
@@ -856,6 +872,14 @@
             "since": "3.1.6-RC1",
             "explain": "Event to modify data before sending file to browser"
         },
+        "core.exit_handler": {
+            "loc": {
+                "includes\/functions.php": false
+            },
+            "vars": "exit_handler_override",
+            "since": "4.0.0-a1",
+            "explain": "This event can either supplement or override the exit_handler() functionTo override this function, the event must set $exit_handler_override totrue to force it to exit directly after calling this event."
+        },
         "core.faq_mode_validation": {
             "loc": {
                 "phpbb\/help\/controller\/help.php": 100
@@ -876,7 +900,7 @@
             "loc": {
                 "phpbb\/feed\/controller\/feed.php": 318
             },
-            "vars": "forum_id, mode, row, topic_id",
+            "vars": "feed, row",
             "since": "3.1.10-RC1",
             "explain": "Event to modify the feed row"
         },
@@ -952,6 +976,22 @@
             "since": "3.1.11-RC1",
             "explain": "Modify smiley root path before populating smiley list"
         },
+        "core.generate_smilies_count_sql_before": {
+            "loc": {
+                "includes\/functions_posting.php": 75
+            },
+            "vars": "forum_id, sql_ary",
+            "since": "3.2.9-RC1",
+            "explain": "Modify SQL query that fetches the total number of smilies in window mode"
+        },
+        "core.generate_smilies_modify_rowset": {
+            "loc": {
+                "includes\/functions_posting.php": 151
+            },
+            "vars": "forum_id, mode, smilies",
+            "since": "3.2.9-RC1",
+            "explain": "Modify smilies before they are assigned to the template"
+        },
         "core.get_avatar_after": {
             "loc": {
                 "includes\/functions.php": 3895
@@ -975,6 +1015,22 @@
             "vars": "row, url",
             "since": "3.1.7-RC1",
             "explain": "Modify gravatar url"
+        },
+        "core.get_group_rank_after": {
+            "loc": {
+                "phpbb\/group\/helper.php": 274
+            },
+            "vars": "group_data, group_rank_data",
+            "since": "3.2.8-RC1",
+            "explain": "Modify a group's rank before displaying"
+        },
+        "core.get_group_rank_before": {
+            "loc": {
+                "phpbb\/group\/helper.php": 241
+            },
+            "vars": "group_data",
+            "since": "3.2.8-RC1",
+            "explain": "Preparing a group's rank before displaying"
         },
         "core.get_logs_after": {
             "loc": {
@@ -1344,6 +1400,14 @@
             "since": "3.1.7-RC1",
             "explain": "Perform additional actions after locking\/unlocking posts\/topics"
         },
+        "core.mcp_main_before": {
+            "loc": {
+                "includes\/mcp\/mcp_main.php": 58
+            },
+            "vars": "action, mode, quickmod",
+            "since": "3.2.8-RC1",
+            "explain": "Event to perform additional actions before an MCP action is executed."
+        },
         "core.mcp_main_fork_sql_after": {
             "loc": {
                 "includes\/mcp\/mcp_main.php": 1539
@@ -1471,6 +1535,14 @@
             "vars": "attachments, forum_id, id, mode, post_id_list, rowset, topic_id",
             "since": "3.1.7-RC1",
             "explain": "Event to modify the post data for the MCP topic review before assigning the posts"
+        },
+        "core.mcp_topic_modify_sql_ary": {
+            "loc": {
+                "includes\/mcp\/mcp_topic.php": 170
+            },
+            "vars": "sql_ary",
+            "since": "3.2.8-RC1",
+            "explain": "Event to modify the SQL query before the MCP topic review posts is queried"
         },
         "core.mcp_topic_review_modify_row": {
             "loc": {
@@ -1640,6 +1712,22 @@
             "since": "3.2.6-RC1",
             "explain": "You can use this event to modify subject and\/or body and add new errors."
         },
+        "core.message_history_modify_sql_ary": {
+            "loc": {
+                "includes\/functions_privmsgs.php": 2026
+            },
+            "vars": "sql_ary",
+            "since": "3.2.8-RC1",
+            "explain": "Event to modify the SQL query before the message history in private message is queried"
+        },
+        "core.message_history_modify_template_vars": {
+            "loc": {
+                "includes\/functions_privmsgs.php": 2149
+            },
+            "vars": "row, template_vars",
+            "since": "3.2.8-RC1",
+            "explain": "Modify the template vars for displaying the message history in private message"
+        },
         "core.message_list_actions": {
             "loc": {
                 "includes\/ucp\/ucp_pm_compose.php": 1506
@@ -1719,6 +1807,14 @@
             "vars": "allow_bbcode, allow_magic_url, allow_smilies, text, uid, update_this_message",
             "since": "3.1.6-RC1",
             "explain": "Event to modify the text before it is parsed"
+        },
+        "core.modify_group_name_string": {
+            "loc": {
+                "phpbb\/group\/helper.php": 209
+            },
+            "vars": "custom_profile_url, group_colour, group_id, group_name, group_name_string, mode, name_strings",
+            "since": "3.2.8-RC1",
+            "explain": "Use this event to change the output of the group name"
         },
         "core.modify_inline_attachments_template_vars": {
             "loc": {
@@ -1936,6 +2032,22 @@
             "since": "3.1.11-RC1",
             "explain": "Perform additional actions after move post sync"
         },
+        "core.move_topics_after": {
+            "loc": {
+                "includes\/functions_admin.php": 624
+            },
+            "vars": "forum_id, forum_ids, topic_ids",
+            "since": "3.2.9-RC1",
+            "explain": "Perform additional actions after topics move"
+        },
+        "core.move_topics_before": {
+            "loc": {
+                "includes\/functions_admin.php": 558
+            },
+            "vars": "forum_id, topic_ids",
+            "since": "3.2.9-RC1",
+            "explain": "Perform additional actions before topics move"
+        },
         "core.move_topics_before_query": {
             "loc": {
                 "includes\/functions_admin.php": 599
@@ -2112,6 +2224,14 @@
             "since": "3.1.11-RC1",
             "explain": "Allow modifying SQL query before topic data is retrieved."
         },
+        "core.pm_modify_message_subject": {
+            "loc": {
+                "includes\/ucp\/ucp_pm_compose.php": 1025
+            },
+            "vars": "message_subject",
+            "since": "3.2.8-RC1",
+            "explain": "This event allows you to modify the PM subject of the PM being quoted"
+        },
         "core.posting_modify_cannot_edit_conditions": {
             "loc": {
                 "posting.php": 470
@@ -2144,6 +2264,14 @@
             "since": "3.2.2-RC1",
             "explain": "This event allows you to modify the post data before parsing"
         },
+        "core.posting_modify_post_subject": {
+            "loc": {
+                "posting.php": 1722
+            },
+            "vars": "post_subject",
+            "since": "3.2.8-RC1",
+            "explain": "This event allows you to modify the post subject of the post being quoted"
+        },
         "core.posting_modify_quote_attributes": {
             "loc": {
                 "posting.php": 1701
@@ -2151,6 +2279,14 @@
             "vars": "post_data, quote_attributes",
             "since": "3.2.6-RC1",
             "explain": "This event allows you to modify the quote attributes of the post being quoted"
+        },
+        "core.posting_modify_row_data": {
+            "loc": {
+                "posting.php": 242
+            },
+            "vars": "forum_id, mode, post_data, topic_id",
+            "since": "3.2.8-RC1",
+            "explain": "This event allows you to bypass reply\/quote test of an unapproved post."
         },
         "core.posting_modify_submission_errors": {
             "loc": {
@@ -2552,6 +2688,14 @@
             "since": "3.1.3-RC1",
             "explain": "Event to set custom ban type"
         },
+        "core.set_cookie": {
+            "loc": {
+                "phpbb\/session.php": 1098
+            },
+            "vars": "cookiedata, cookietime, disable_cookie, httponly, name",
+            "since": "3.2.9-RC1",
+            "explain": "Event to modify or disable setting cookies"
+        },
         "core.set_post_visibility_after": {
             "loc": {
                 "phpbb\/content_visibility.php": 678
@@ -2719,6 +2863,14 @@
             "vars": "cur_post_id, current_row_number, forum_id, mode, post_row, row, topic_id",
             "since": "3.1.4-RC1",
             "explain": "Event to modify the template data block for topic reviews"
+        },
+        "core.topic_review_modify_sql_ary": {
+            "loc": {
+                "includes\/functions_posting.php": 1005
+            },
+            "vars": "cur_post_id, forum_id, mode, post_list, show_quote_button, sql_ary, topic_id",
+            "since": "3.2.8-RC1",
+            "explain": "Event to modify the SQL query for topic reviews"
         },
         "core.twig_environment_render_template_after": {
             "loc": {
@@ -2992,6 +3144,14 @@
             "since": "3.1.11-RC1",
             "explain": "Trigger events on successfull avatar change"
         },
+        "core.ucp_profile_avatar_upload_validation": {
+            "loc": {
+                "phpbb\/avatar\/driver\/remote.php": 100
+            },
+            "vars": "error, height, url, width",
+            "since": "3.2.9-RC1",
+            "explain": "Event to make custom validation of avatar upload"
+        },
         "core.ucp_profile_info_modify_sql_ary": {
             "loc": {
                 "includes\/ucp\/ucp_profile.php": 399
@@ -3130,7 +3290,7 @@
         },
         "core.ucp_remind_modify_select_sql": {
             "loc": {
-                "includes\/ucp\/ucp_remind.php": 79
+                "phpbb\/ucp\/controller\/reset_password.php": 195
             },
             "vars": "email, sql_array, username",
             "since": "3.1.11-RC1",
@@ -3143,6 +3303,14 @@
             "vars": "mode, user_ids",
             "since": "3.1.0-a1",
             "explain": "Remove users from friends\/foes"
+        },
+        "core.ucp_reset_password_modify_select_sql": {
+            "loc": {
+                "phpbb\/ucp\/controller\/reset_password.php": 336
+            },
+            "vars": "reset_token, sql_array, user_id",
+            "since": "3.3.0-b1",
+            "explain": "Change SQL query for fetching user data"
         },
         "core.ucp_restore_permissions": {
             "loc": {
@@ -3448,6 +3616,14 @@
             "since": "3.1.0-a1",
             "explain": "Modify the users' data displayed with their posts"
         },
+        "core.viewtopic_gen_sort_selects_before": {
+            "loc": {
+                "viewtopic.php": 486
+            },
+            "vars": "join_user_sql, limit_days, s_limit_days, s_sort_dir, s_sort_key, sort_by_sql, sort_by_text, sort_days, sort_dir, sort_key, u_sort_param",
+            "since": "3.2.8-RC1",
+            "explain": "Event to add new sorting options"
+        },
         "core.viewtopic_get_post_data": {
             "loc": {
                 "viewtopic.php": 1321
@@ -3535,6 +3711,14 @@
             "vars": "attachments, cp_row, current_row_number, end, post_edit_list, post_row, poster_id, row, start, topic_data, total_posts, user_cache, user_poster_data",
             "since": "3.1.0-a1",
             "explain": "Modify the posts template block"
+        },
+        "core.viewtopic_modify_quick_reply_template_vars": {
+            "loc": {
+                "viewtopic.php": 2380
+            },
+            "vars": "topic_data, tpl_ary",
+            "since": "3.2.9-RC1",
+            "explain": "Event after the quick-reply has been setup"
         },
         "core.viewtopic_post_row_after": {
             "loc": {
@@ -3919,6 +4103,20 @@
             "since": "3.1.10-RC1",
             "explain": "Add content before move topic\/post form"
         },
+        "mcp_move_destination_forum_after": {
+            "loc": {
+                "mcp_move.html": 53
+            },
+            "since": "3.2.8-RC1",
+            "explain": "Add content after the destination select element in the move topic\/post form"
+        },
+        "mcp_move_destination_forum_before": {
+            "loc": {
+                "mcp_move.html": 46
+            },
+            "since": "3.2.8-RC1",
+            "explain": "Add content before the destination select element in the move topic\/post form"
+        },
         "mcp_post_additional_options": {
             "loc": {
                 "mcp_post.html": 177
@@ -3967,6 +4165,20 @@
             },
             "since": "3.1.6-RC1",
             "explain": "Add some options (field, checkbox, ...) before the subject field when split a subject"
+        },
+        "mcp_topic_post_author_full_append": {
+            "loc": {
+                "mcp_topic.html": 123
+            },
+            "since": "3.2.8-RC1",
+            "explain": "Append information to message author username for post details in topic moderation"
+        },
+        "mcp_topic_post_author_full_prepend": {
+            "loc": {
+                "mcp_topic.html": 123
+            },
+            "since": "3.2.8-RC1",
+            "explain": "Prepend information to message author username for post details in topic moderation"
         },
         "mcp_topic_postrow_attachments_after": {
             "loc": {
@@ -4847,12 +5059,40 @@
             "since": "3.1.7-RC1",
             "explain": "Add content after the poll preview block"
         },
+        "posting_review_row_post_author_username_append": {
+            "loc": {
+                "posting_review.html": 25
+            },
+            "since": "3.2.8-RC1",
+            "explain": "Append information to post author username of member"
+        },
+        "posting_review_row_post_author_username_prepend": {
+            "loc": {
+                "posting_review.html": 25
+            },
+            "since": "3.2.8-RC1",
+            "explain": "Prepend information to post author username of member"
+        },
         "posting_topic_review_row_content_after": {
             "loc": {
                 "posting_topic_review.html": 63
             },
             "since": "3.2.4-RC1",
             "explain": "Add content after the message content in topic review"
+        },
+        "posting_topic_review_row_post_author_username_append": {
+            "loc": {
+                "posting_topic_review.html": 57
+            },
+            "since": "3.2.8-RC1",
+            "explain": "Append information to post author username of member"
+        },
+        "posting_topic_review_row_post_author_username_prepend": {
+            "loc": {
+                "posting_topic_review.html": 57
+            },
+            "since": "3.2.8-RC1",
+            "explain": "Prepend information to post author username of member"
         },
         "posting_topic_review_row_post_details_after": {
             "loc": {
@@ -5196,6 +5436,24 @@
             "since": "3.1.0-a1",
             "explain": "Add content into topic rows (inside the elements containing topic titles)"
         },
+        "topiclist_row_topic_by_author_after": {
+            "loc": {
+                "search_results.html": 122,
+                "viewforum_body.html": 203,
+                "mcp_forum.html": 91
+            },
+            "since": "3.2.8-RC1",
+            "explain": "Add content into topic rows (after the \"by topic author\" row)"
+        },
+        "topiclist_row_topic_by_author_before": {
+            "loc": {
+                "search_results.html": 120,
+                "viewforum_body.html": 201,
+                "mcp_forum.html": 89
+            },
+            "since": "3.2.8-RC1",
+            "explain": "Add content into topic rows (before the \"by topic author\" row)"
+        },
         "topiclist_row_topic_title_after": {
             "loc": {
                 "search_results.html": 107,
@@ -5302,6 +5560,20 @@
             },
             "since": "3.1.6-RC1",
             "explain": "Add content before the private messages history review."
+        },
+        "ucp_pm_history_row_message_author_username_append": {
+            "loc": {
+                "ucp_pm_history.html": 39
+            },
+            "since": "3.2.8-RC1",
+            "explain": "Append information to message author username of member"
+        },
+        "ucp_pm_history_row_message_author_username_prepend": {
+            "loc": {
+                "ucp_pm_history.html": 39
+            },
+            "since": "3.2.8-RC1",
+            "explain": "Prepend information to message author username of member"
         },
         "ucp_pm_viewmessage_avatar_after": {
             "loc": {
@@ -5470,6 +5742,13 @@
             },
             "since": "3.1.4-RC1",
             "explain": "Add options in profile page fieldset - before jabber field."
+        },
+        "ucp_profile_profile_info_birthday_label_append": {
+            "loc": {
+                "ucp_profile_profile_info.html": 16
+            },
+            "since": "3.2.9-RC1",
+            "explain": "Add more text to birthday label, such as required asterisk"
         },
         "ucp_profile_register_details_after": {
             "loc": {
@@ -6214,6 +6493,20 @@
             },
             "since": "3.1.0-b4",
             "explain": "Add additional options to group settings (before GROUP_FOUNDER_MANAGE)"
+        },
+        "acp_group_types_append": {
+            "loc": {
+                "acp_groups.html": 44
+            },
+            "since": "3.2.9-RC1",
+            "explain": "Add additional group type options to group settings (append the list)"
+        },
+        "acp_group_types_prepend": {
+            "loc": {
+                "acp_groups.html": 39
+            },
+            "since": "3.2.9-RC1",
+            "explain": "Add additional group type options to group settings (prepend the list)"
         },
         "acp_groups_find_username_append": {
             "loc": {
