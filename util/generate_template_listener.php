@@ -1,7 +1,7 @@
 <?php
 /**
 * phpBB Extension - marttiphpbb showphpbbevents
-* @copyright (c) 2014 - 2020 marttiphpbb <info@martti.be>
+* @copyright (c) 2014 - 2022 marttiphpbb <info@martti.be>
 * @license GNU General Public License, version 2 (GPL-2.0)
 */
 
@@ -11,7 +11,7 @@ use marttiphpbb\showphpbbevents\util\event_type;
 
 class generate_template_listener
 {
-	const LINK_BASE = 'https://github.com/phpbb/phpbb/tree/prep-release-3.3.0/phpBB/';
+	const LINK_BASE = 'https://github.com/phpbb/phpbb/tree/prep-release-3.3.7/phpBB/';
 	const LINK_LINE = '#L';
 	const INCLUDECSS = "{%- INCLUDECSS '@marttiphpbb_showphpbbevents/showphpbbevents.css' -%}\n";
 	const INCLUDEJS = "{%- INCLUDEJS '@marttiphpbb_showphpbbevents/js/showphpbbevents.js' -%}\n";

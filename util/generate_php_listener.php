@@ -1,7 +1,7 @@
 <?php
 /**
 * phpBB Extension - marttiphpbb showphpbbevents
-* @copyright (c) 2014 - 2020 marttiphpbb <info@martti.be>
+* @copyright (c) 2014 - 2022 marttiphpbb <info@martti.be>
 * @license GNU General Public License, version 2 (GPL-2.0)
 */
 
@@ -15,7 +15,7 @@ class generate_php_listener
 <?php
 /**
 * phpBB Extension - marttiphpbb showphpbbevents
-* @copyright (c) 2014 - 2020 marttiphpbb <info@martti.be>
+* @copyright (c) 2014 - 2022 marttiphpbb <info@martti.be>
 * @license GNU General Public License, version 2 (GPL-2.0)
 * This file was generated with the ext-showphpbbevents:generate command
 */
