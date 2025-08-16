@@ -1,4 +1,11 @@
-{# This file was generated with the ext-showphpbbevents:generate command. #}
-{%- if marttiphpbb_showphpbbevents.enable -%}
-<a class="showphpbbevents" title="3.1.0-a3&#10;acp_bbcodes.html" href="https://github.com/phpbb/phpbb/tree/prep-release-3.3.7/phpBB/adm/style/acp_bbcodes.html#L106">acp_bbcodes_actions_prepend</a>
+{#- This file was generated with the ext-showphpbbevents:generate command. -#}
+{%- if marttiphpbb_showphpbbevents.show != 'hidden' -%}
+  <a class="showphpbbevents" href="https://github.com/phpbb/phpbb/tree/prep-release-3.3.15/phpBB/adm/style/acp_bbcodes.html#L106" data-showphpbbevents-tpl="stt_e5b9d008">
+  {%- if marttiphpbb_showphpbbevents.show == 'full' -%}
+	acp_bbcodes_actions_prepend
+{%- else -%}
+  EV
+{%- endif -%}
+</a>
+
 {%- endif -%}

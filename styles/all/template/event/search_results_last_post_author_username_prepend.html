@@ -1,4 +1,11 @@
-{# This file was generated with the ext-showphpbbevents:generate command. #}
-{%- if marttiphpbb_showphpbbevents.enable -%}
-<a class="showphpbbevents" title="3.2.4-RC1&#10;search_results.html" href="https://github.com/phpbb/phpbb/tree/prep-release-3.3.7/phpBB/styles/prosilver/template/search_results.html#L112">search_results_last_post_author_username_prepend</a>
+{#- This file was generated with the ext-showphpbbevents:generate command. -#}
+{%- if marttiphpbb_showphpbbevents.show != 'hidden' -%}
+  <a class="showphpbbevents" href="https://github.com/phpbb/phpbb/tree/prep-release-3.3.15/phpBB/styles/prosilver/template/search_results.html#L112" data-showphpbbevents-tpl="stt_6d416f6a">
+  {%- if marttiphpbb_showphpbbevents.show == 'full' -%}
+	search_results_last_post_author_username_prepend
+{%- else -%}
+  EV
+{%- endif -%}
+</a>
+
 {%- endif -%}

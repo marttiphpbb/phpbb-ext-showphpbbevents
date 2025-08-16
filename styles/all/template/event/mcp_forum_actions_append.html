@@ -1,4 +1,15 @@
-{# This file was generated with the ext-showphpbbevents:generate command. #}
-{%- if marttiphpbb_showphpbbevents.enable -%}
-<option value"mcp_forum_actions_append" data-marttiphpbb-showphpbbevents-title="3.1.11-RC1&#10;mcp_forum.html" data-marttiphpbb-showphpbbevents-link="https://github.com/phpbb/phpbb/tree/prep-release-3.3.7/phpBB/styles/prosilver/template/mcp_forum.html#L145" data-marttiphpbb-showphpbbevents-name="mcp_forum_actions_append">[ mcp_forum_actions_append ]</option>
+{#- This file was generated with the ext-showphpbbevents:generate command. -#}
+{%- if marttiphpbb_showphpbbevents.show != 'hidden' -%}
+  <option value="mcp_forum_actions_append" data-showphpbbevents-option="{&quot;tooltip_id&quot;:&quot;stt_5e58eca5&quot;,&quot;link&quot;:&quot;https:\/\/github.com\/phpbb\/phpbb\/tree\/prep-release-3.3.15\/phpBB\/styles\/prosilver\/template\/mcp_forum.html#L145&quot;}" data-showphpbbevents-label="{%- if marttiphpbb_showphpbbevents.show == 'full' -%}
+	mcp_forum_actions_append
+{%- else -%}
+  EV
+{%- endif -%}">
+  [ {%- if marttiphpbb_showphpbbevents.show == 'full' -%}
+	mcp_forum_actions_append
+{%- else -%}
+  EV
+{%- endif -%} ]
+</option>
+
 {%- endif -%}

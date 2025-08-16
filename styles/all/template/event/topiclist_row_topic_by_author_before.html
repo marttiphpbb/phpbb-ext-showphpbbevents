@@ -1,12 +1,17 @@
-{# This file was generated with the ext-showphpbbevents:generate command. #}
-{%- if marttiphpbb_showphpbbevents.enable -%}
-{%- if SCRIPT_NAME == 'search' -%}
-<a class="showphpbbevents" title="3.2.8-RC1&#10;search_results.html,*&#10;viewforum_body.html,&#10;mcp_forum.html" href="">topiclist_row_topic_by_author_before</a>
+{#- This file was generated with the ext-showphpbbevents:generate command. -#}
+{%- if marttiphpbb_showphpbbevents.show != 'hidden' -%}
+  <a class="showphpbbevents" href="{%- if SCRIPT_NAME == 'search' -%}
+  https://github.com/phpbb/phpbb/tree/prep-release-3.3.15/phpBB/styles/prosilver/template/search_results.html#L121
+{%- endif -%}{%- if SCRIPT_NAME == 'viewforum' -%}
+  https://github.com/phpbb/phpbb/tree/prep-release-3.3.15/phpBB/styles/prosilver/template/viewforum_body.html#L201
+{%- endif -%}{%- if SCRIPT_NAME == 'mcp' -%}
+  https://github.com/phpbb/phpbb/tree/prep-release-3.3.15/phpBB/styles/prosilver/template/mcp_forum.html#L89
+{%- endif -%}" data-showphpbbevents-tpl="stt_3179c015">
+  {%- if marttiphpbb_showphpbbevents.show == 'full' -%}
+	topiclist_row_topic_by_author_before
+{%- else -%}
+  EV
 {%- endif -%}
-{%- if SCRIPT_NAME == 'viewforum' -%}
-<a class="showphpbbevents" title="3.2.8-RC1&#10;search_results.html,&#10;viewforum_body.html,*&#10;mcp_forum.html" href="">topiclist_row_topic_by_author_before</a>
-{%- endif -%}
-{%- if SCRIPT_NAME == 'mcp' -%}
-<a class="showphpbbevents" title="3.2.8-RC1&#10;search_results.html,&#10;viewforum_body.html,&#10;mcp_forum.html*" href="https://github.com/phpbb/phpbb/tree/prep-release-3.3.7/phpBB/styles/prosilver/template/mcp_forum.html#L89">topiclist_row_topic_by_author_before</a>
-{%- endif -%}
+</a>
+
 {%- endif -%}

@@ -1,14 +1,42 @@
-{# This file was generated with the ext-showphpbbevents:generate command. #}
-{%- if marttiphpbb_showphpbbevents.enable -%}
-<a class="showphpbbevents-hide" href="{{- marttiphpbb_showphpbbevents.u_hide -}}" title="{{- lang('MARTTIPHPBB_SHOWPHPBBEVENTS_HIDE_EXPLAIN') -}}" rel="nofollow">
-	{{- lang('MARTTIPHPBB_SHOWPHPBBEVENTS_HIDE') -}}
-</a>{%- endif -%}
-{%- if not marttiphpbb_showphpbbevents.enable -%}
-<a class="showphpbbevents-show" href="{{- marttiphpbb_showphpbbevents.u_show -}}" title="{{- lang('MARTTIPHPBB_SHOWPHPBBEVENTS_SHOW_EXPLAIN') -}}" rel="nofollow">
-	{{- lang('MARTTIPHPBB_SHOWPHPBBEVENTS_SHOW') -}}
-</a>{%- endif -%}
-{%- if marttiphpbb_showphpbbevents.enable -%}
-<a class="showphpbbevents-head" title="3.1.0-b4&#10;simple_header.html" href="https://github.com/phpbb/phpbb/tree/prep-release-3.3.7/phpBB/styles/prosilver/template/simple_header.html#L40">simple_header_head_append</a>
-<a class="showphpbbevents-head" title="3.1.0-RC3&#10;simple_header.html" href="https://github.com/phpbb/phpbb/tree/prep-release-3.3.7/phpBB/styles/prosilver/template/simple_header.html#L44">simple_header_stylesheets_after</a>
-<a class="showphpbbevents" title="3.1.0-b2&#10;simple_header.html" href="https://github.com/phpbb/phpbb/tree/prep-release-3.3.7/phpBB/styles/prosilver/template/simple_header.html#L50">simple_header_body_before</a>
+{#- This file was generated with the ext-showphpbbevents:generate command. -#}
+
+{%- if marttiphpbb_showphpbbevents.show != 'hidden' -%}
+  <a class="showphpbbevents-hide" href="{{- marttiphpbb_showphpbbevents.u_hide -}}" title="Hide the phpBB events" rel="nofollow">
+	Hide
+</a>
+{%- endif -%}
+{%- if marttiphpbb_showphpbbevents.show != 'full' -%}
+  <a class="showphpbbevents-show" href="{{- marttiphpbb_showphpbbevents.u_full -}}" title="Show the phpBB events with full names" rel="nofollow">
+	Show
+</a>
+{%- endif -%}
+{%- if marttiphpbb_showphpbbevents.show != 'small' -%}
+  <a class="showphpbbevents-show" href="{{- marttiphpbb_showphpbbevents.u_small -}}" title="Show the phpBB events with a small badge" rel="nofollow">
+	Small
+</a>
+{%- endif -%}{%- if marttiphpbb_showphpbbevents.show != 'hidden' -%}
+  <a class="showphpbbevents-head" href="https://github.com/phpbb/phpbb/tree/prep-release-3.3.15/phpBB/styles/prosilver/template/simple_header.html#L40" data-showphpbbevents-tpl="stt_33749547">
+	{%- if marttiphpbb_showphpbbevents.show == 'full' -%}
+	simple_header_head_append
+{%- else -%}
+  EV
+{%- endif -%}
+</a>
+
+<a class="showphpbbevents-head" href="https://github.com/phpbb/phpbb/tree/prep-release-3.3.15/phpBB/styles/prosilver/template/simple_header.html#L44" data-showphpbbevents-tpl="stt_df242b16">
+	{%- if marttiphpbb_showphpbbevents.show == 'full' -%}
+	simple_header_stylesheets_after
+{%- else -%}
+  EV
+{%- endif -%}
+</a>
+
+<a class="showphpbbevents" href="https://github.com/phpbb/phpbb/tree/prep-release-3.3.15/phpBB/styles/prosilver/template/simple_header.html#L50" data-showphpbbevents-tpl="stt_acd1b6bd">
+  {%- if marttiphpbb_showphpbbevents.show == 'full' -%}
+	simple_header_body_before
+{%- else -%}
+  EV
+{%- endif -%}
+</a>
+
 {%- endif -%}

@@ -1,4 +1,11 @@
-{# This file was generated with the ext-showphpbbevents:generate command. #}
-{%- if marttiphpbb_showphpbbevents.enable -%}
-<a class="showphpbbevents" title="3.1.7-RC1&#10;permission_forum_copy.html" href="https://github.com/phpbb/phpbb/tree/prep-release-3.3.7/phpBB/adm/style/permission_forum_copy.html#L15">acp_permission_forum_copy_src_forum_append</a>
+{#- This file was generated with the ext-showphpbbevents:generate command. -#}
+{%- if marttiphpbb_showphpbbevents.show != 'hidden' -%}
+  <a class="showphpbbevents" href="https://github.com/phpbb/phpbb/tree/prep-release-3.3.15/phpBB/adm/style/permission_forum_copy.html#L15" data-showphpbbevents-tpl="stt_4b078729">
+  {%- if marttiphpbb_showphpbbevents.show == 'full' -%}
+	acp_permission_forum_copy_src_forum_append
+{%- else -%}
+  EV
+{%- endif -%}
+</a>
+
 {%- endif -%}

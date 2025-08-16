@@ -1,21 +1,21 @@
-a.showphpbbevents, 
+a.showphpbbevents,
 a.showphpbbevents-head,
 a.showphpbbevents-option,
-a.showphpbbevents-hide, 
+a.showphpbbevents-hide,
 a.showphpbbevents-show
 {
-    color: white;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 2px;
-    margin: 2px;
-    font-size: 12px;
-    line-height: 14px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 2px;
+  margin: 2px;
+  font-size: 12px;
+  line-height: 14px;
 }
 
 a.showphpbbevents
 {
-    background-color: black;
+  background-color: black;
 }
 
 a.showphpbbevents-head, a.showphpbbevents-option
@@ -33,22 +33,87 @@ a.showphpbbevents-show
 	background-color: green;
 }
 
-table.marttiphpbb-showphpbbevents-php
+table.showphpbbevents-php
 {
-    border-collapse: collapse;
-    border: 1px solid black;
-    margin: 10px;
-    font-size: 15px;
-    color: black;
-    background: white;
+  border-collapse: collapse;
+  border: 1px solid black;
+  margin: 10px;
+  font-size: 15px;
+  color: black;
+  background: white;
 }
 
-table.marttiphpbb-showphpbbevents-php tbody tr:nth-child(odd)
+table.showphpbbevents-php tbody tr:nth-child(odd)
 {
-    background: lightgrey;
+  background: lightgrey;
 }
 
-table.marttiphpbb-showphpbbevents-php th, table.marttiphpbb-showphpbbevents-php td
+table.showphpbbevents-php tbody tr.showphpbbevents-deprecated
 {
-    padding: 5px;
+  background: rgb(255, 230, 230);
+}
+
+table.showphpbbevents-php tbody tr.showphpbbevents-deprecated:nth-child(odd)
+{
+  background: rgb(255, 205, 205);
+}
+
+table.showphpbbevents-php th, table.showphpbbevents-php td
+{
+  padding: 4px;
+}
+
+div.showphpbbevents-tt {
+  margin: 0;
+  padding: 0;
+}
+
+.showphpbbevents-tt p {
+  color: white;
+  padding: 1px 10px;
+  margin: 0;
+}
+
+p.showphpbbevents-since {
+  color: rgb(252, 225, 105);
+}
+
+p.showphpbbevents-changes {
+  color: rgb(255, 181, 78);
+}
+
+p.showphpbbevents-deprecated {
+  color: rgb(252, 168, 168);
+}
+
+.showphpbbevents-tt a {
+  color: rgb(188, 196, 255);
+  padding: 0;
+  margin: 0;
+}
+
+.showphpbbevents-tt table {
+  border-collapse: collapse;
+  border: 1px solid rgb(0, 81, 68);
+  background-color: #00312a;
+  color: #9ae0d7;
+  width: 100%;
+  padding: 0;
+}
+
+.showphpbbevents-tt table td{
+  border: 1px solid rgb(0, 81, 68);
+  padding: 1px 10px;
+}
+.showphpbbevents-tt table td:nth-child(2){
+  color: #cbf4f1;
+  font-weight: bold;
+}
+
+p.showphpbbevents-desc {
+  color: #81d67c;
+}
+
+div.showphpbbevents-tt.showphpbbevents-deprecated {
+  background-color: #7c0000;
 }
